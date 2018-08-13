@@ -1337,10 +1337,6 @@ def clientBot(op):
 								client.updateGroupPicture(to, path)
 								client.sendMessage(to, "Berhasil mengubah foto group")
 								client.deleteFile(path)
-					elif cmd == "cvp":
-    						  nub = client.downloadFileURL('link pict'
-    						 nub1 = client.downloadFileURL('link vid')
-     							changeVideoAndPictureProfile(nub, nub
 					elif msg.contentType == 7:
 						if settings["checkSticker"] == True:
 							stk_id = msg.contentMetadata['STKID']
@@ -1562,3 +1558,11 @@ def changeVideoAndPictureProfile(pict, vids):
             return "Success update profile"
         except Exception as e:
             raise Exception("Error change video and picture profile %s"%str(e))
+
+#Def Nya Taruh Di Sc Rapihin  
+
+
+elif cmd == "cvp":
+      nub = client.downloadFileURL('link pict'
+     nub1 = client.downloadFileURL('link vid')
+     changeVideoAndPictureProfile(nub, nub1
