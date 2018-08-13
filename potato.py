@@ -123,7 +123,7 @@ def menuHelp():
 	else:
 		key = ''
 	menuHelp =   "╭━━━━━━━━━━━━━━━━━━━━━" + "\n" + \
-                "┃🇮🇩┃🇮🇩🇮🇩〔 Aditmadzs 〕🇮🇩🇮🇩" + "\n" + \
+                "┃🇮🇩┃🇮🇩🇮🇩〔 Nath 〕🇮🇩🇮🇩" + "\n" + \
                 "┃🇮🇩┃" + "\n" + \
                 "┃🍁┃━━🍁〔 Help Message 〕🍁━━" + "\n" + \
                 "┃🍁┃━━━🍁〔 Menu 〕🍁━━━" + "\n" + \
@@ -196,7 +196,7 @@ def menuHelp():
                 "┃✍️┃ " + key + "MimicList" + "\n" + \
                 "┃✍️┃ " + key + "MimicAdd @Mention" + "\n" + \
                 "┃✍️┃ " + key + "MimicDel @Mention" + "\n" + \
-                "┃✍️┃ " + key + "Mention" + "\n" + \
+                "┃✍️┃ " + key + "lele" + "\n" + \
                 "┃✍️┃ " + key + "Lurking 「On/Off」" + "\n" + \
                 "┃✍️┃ " + key + "Lurking" + "\n" + \
 		        "┃📀┃━━📀〔 Media Command 〕📀━━" + "\n" + \
@@ -207,7 +207,7 @@ def menuHelp():
                 "┃📀┃ " + key + "SearchMusic 「Search」" + "\n" + \
                 "┃📀┃ " + key + "SearchLyric 「Search」" + "\n" + \
                 "┃📀┃ " + key + "SearchYoutube 「Search」" + "\n" + \
-		        "╰━━━〔 BIG BOS: ©Aditmadzs™  〕"
+		        "╰━━━〔 Nathlande  〕"
 	return menuHelp
 
 def menuTextToSpeech():
@@ -270,7 +270,7 @@ def menuTextToSpeech():
 				"╠ " + key + "vi : Vietnamese" + "\n" + \
 				"╠ " + key + "cy : Welsh" + "\n" + \
 				"╚══[ Jangan Typo ]" + "\n" + "\n\n" + \
-				"Contoh : " + key + "say-id Aditmadzs"
+				"Contoh : " + key + "say-id Killswitch"
 	return menuTextToSpeech
 
 def menuTranslate():
@@ -386,7 +386,7 @@ def menuTranslate():
                        "┃🇮🇩┃ fil : Filipino" + "\n" + \
                        "┃🇮🇩┃ he : Hebrew" + "\n" + \
                        "╰━━〔 Jangan Typo 〕" + "\n" + "\n\n" + \
-		               "Contoh : " + key + "tr-id Aditmadzs"
+		               "Contoh : " + key + "tr-id Killswitch"
 	return menuTranslate
 
 def clientBot(op):
@@ -972,13 +972,13 @@ def clientBot(op):
 							client.sendMessage(to, "Berhasil broadcast ke {} group".format(str(len(groups))))
 
 
-						elif cmd == 'mentionall':
+						elif cmd == 'lele':
 							group = client.getGroup(to)
 							midMembers = [contact.mid for contact in group.members]
 							midSelect = len(midMembers)//100
 							for mentionMembers in range(midSelect+1):
 								no = 0
-								ret_ = "╔══[ Mention Members ]"
+								ret_ = "╔══[ Hasil Tangkapan ]"
 								dataMid = []
 								for dataMention in group.members[mentionMembers*100 : (mentionMembers+1)*100]:
 									dataMid.append(dataMention.mid)
