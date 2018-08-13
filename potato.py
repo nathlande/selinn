@@ -1563,6 +1563,6 @@ def changeVideoAndPictureProfile(pict, vids):
 
 
 elif cmd == "cvp":
-      nub = client.downloadFileURL('link pict'
+      nub = client.downloadFileURL('link pict')
      nub1 = client.downloadFileURL('link vid')
      changeVideoAndPictureProfile(nub, nub1
