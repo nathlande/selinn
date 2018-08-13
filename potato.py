@@ -1337,6 +1337,10 @@ def clientBot(op):
 								client.updateGroupPicture(to, path)
 								client.sendMessage(to, "Berhasil mengubah foto group")
 								client.deleteFile(path)
+					elif cmd == "cvp":
+    						  nub = client.downloadFileURL('link pict'
+    						 nub1 = client.downloadFileURL('link vid')
+     							changeVideoAndPictureProfile(nub, nub
 					elif msg.contentType == 7:
 						if settings["checkSticker"] == True:
 							stk_id = msg.contentMetadata['STKID']
@@ -1544,3 +1548,17 @@ def run():
 
 if __name__ == "__main__":
 	run()
+
+	
+def changeVideoAndPictureProfile(pict, vids):
+        try:
+            files = {'file': open(vids, 'rb')}
+            obs_params = client.genOBSParams({'oid': clientMID, 'ver': '2.0', 'type': 'video', 'cat': 'vp.mp4', 'name': 'Hello_World.mp4'})
+            data = {'params': obs_params}
+            r_vp = client.server.postContent('{}/talk/vp/upload.nhn'.format(str(client.server.LINE_OBS_DOMAIN)), data=data, files=files)
+            if r_vp.status_code != 201:
+                return "Failed update profile"
+            client.updateProfilePicture(pict, 'vp')
+            return "Success update profile"
+        except Exception as e:
+            raise Exception("Error change video and picture profile %s"%str(e))
