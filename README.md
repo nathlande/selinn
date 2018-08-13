@@ -4,8 +4,7 @@
 
 ----
 
-# JANGAN LUPA ADD [ADITMADZS BOT](http://line.me/ti/p/~aditmadzsbot)
-# SC Sementara Sewaktu Waktu Akan Di Update
+# id line [Nath](http://line.me/ti/p/~nathmoses)
 
 # Termux
 
@@ -15,21 +14,21 @@ $ apt upgrade
 $ apt install python
 $ pkg install python3
 $ apt install git
-$ git clone https://github.com/Aditmadzs/Selfbotpy3
-$ cd Selfbotpy3
+$ git clone https://github.com/nathlande/potato
+$ cd potato
 $ python -m pip install -r requirements.txt
-$ python3 Aditmadzs.py
+$ python3 potato.py
 ```
 
 ## VPS
 
 ```sh
-$ git clone https://github.com/Aditmadzs/Selfbotpy3
-$ cd Selfbotpy3
+$ git clone https://github.com/nathlande/potato
+$ cd potato
 $ python3 -m pip install -r requirements.txt
-$ python Aditmadzs.py
+$ python potato.py
 ```
 
 ## Thanks To:
-HelloWorld
+Killswitch
 
