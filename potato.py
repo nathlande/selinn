@@ -196,9 +196,9 @@ def menuHelp():
                 "┃✍️┃ " + key + "MimicList" + "\n" + \
                 "┃✍️┃ " + key + "MimicAdd @Mention" + "\n" + \
                 "┃✍️┃ " + key + "MimicDel @Mention" + "\n" + \
-                "┃✍️┃ " + key + "lele" + "\n" + \
-                "┃✍️┃ " + key + "Lurking 「On/Off」" + "\n" + \
-                "┃✍️┃ " + key + "Lurking" + "\n" + \
+                "┃✍️┃ " + key + "Mention" + "\n" + \
+                "┃✍️┃ " + key + "Lele 「On/Off」" + "\n" + \
+                "┃✍️┃ " + key + "Lele" + "\n" + \
 		        "┃📀┃━━📀〔 Media Command 〕📀━━" + "\n" + \
                 "┃📀┃ " + key + "InstaInfo 「Username」" + "\n" + \
                 "┃📀┃ " + key + "InstaStory 「Username」" + "\n" + \
@@ -972,7 +972,7 @@ def clientBot(op):
 							client.sendMessage(to, "Berhasil broadcast ke {} group".format(str(len(groups))))
 
 
-						elif cmd == 'lele':
+						elif cmd == 'Mentionall':
 							group = client.getGroup(to)
 							midMembers = [contact.mid for contact in group.members]
 							midSelect = len(midMembers)//100
@@ -986,7 +986,7 @@ def clientBot(op):
 									ret_ += "\n╠ {}. @!".format(str(no))
 								ret_ += "\n╚══[ Total {} Members]".format(str(len(dataMid)))
 								client.sendMention(to, ret_, dataMid)
-						elif cmd == "lurking on":
+						elif cmd == "lele on":
 							tz = pytz.timezone("Asia/Makassar")
 							timeNow = datetime.now(tz=tz)
 							day = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday","Friday", "Saturday"]
@@ -1007,7 +1007,7 @@ def clientBot(op):
 									pass
 								read['readPoint'][to] = msg_id
 								read['readMember'][to] = []
-								client.sendMessage(to, "Lurking telah diaktifkan")
+								client.sendMessage(to, "kekuatan lele telah diaktifkan")
 							else:
 								try:
 									del read['readPoint'][to]
@@ -1017,7 +1017,7 @@ def clientBot(op):
 								read['readPoint'][to] = msg_id
 								read['readMember'][to] = []
 								client.sendMessage(to, "Set reading point : \n{}".format(readTime))
-						elif cmd == "lurking off":
+						elif cmd == "lele off":
 							tz = pytz.timezone("Asia/Makassar")
 							timeNow = datetime.now(tz=tz)
 							day = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday","Friday", "Saturday"]
@@ -1031,7 +1031,7 @@ def clientBot(op):
 								if bln == str(k): bln = bulan[k-1]
 							readTime = hasil + ", " + timeNow.strftime('%d') + " - " + bln + " - " + timeNow.strftime('%Y') + "\nJam : [ " + timeNow.strftime('%H:%M:%S') + " ]"
 							if to not in read['readPoint']:
-								client.sendMessage(to,"Lurking telah dinonaktifkan")
+								client.sendMessage(to,"kekuatan lele telah dinonaktifkan")
 							else:
 								try:
 									del read['readPoint'][to]
@@ -1039,7 +1039,7 @@ def clientBot(op):
 								except:
 									pass
 								client.sendMessage(to, "Delete reading point : \n{}".format(readTime))
-						elif cmd == "lurking":
+						elif cmd == "lele":
 							if to in read['readPoint']:
 								if read["readMember"][to] == []:
 									return client.sendMessage(to, "Tidak Ada Sider")
