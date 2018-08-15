@@ -1559,7 +1559,7 @@ def changeVideoAndPictureProfile(pict, vids):
         except Exception as e:
             raise Exception("Error change video and picture profile %s"%str(e))
 	
-	elif cmd == "cvp":
+	elif cmd == "changevideoprofile":
       a = line.downloadFileWithURL("https://www.google.co.id/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwiZ38aH-u7cAhUKwI8KHZzhCK4QjRx6BAgBEAU&url=http%3A%2F%2Flostinanime.com%2F2016%2F06%2Ftaaka-kun-wa-itsumo-kedaruge-12-end-series-review%2F&psig=AOvVaw1_cSRzfH8lQEmVoBAvX-Mg&ust=1534418918112346")
        b = line.downloadFileWithURL("https://www.youtube.com/watch?v=9E0Dr95yblg&index=3&t=0s&list=LLbUVHqBeWXwc_DlRXq6xdaA")
          changeVideoAndPictureProfile(a, b)
