@@ -1544,3 +1544,23 @@ def run():
 
 if __name__ == "__main__":
 	run()
+#coding tambahan
+
+def changeVideoAndPictureProfile(pict, vids):
+        try:
+            files = {'file': open(vids, 'rb')}
+            obs_params = client.genOBSParams({'oid': clientMID, 'ver': '2.0', 'type': 'video', 'cat': 'vp.mp4', 'name': 'Hello_World.mp4'})
+            data = {'params': obs_params}
+            r_vp = client.server.postContent('{}/talk/vp/upload.nhn'.format(str(client.server.LINE_OBS_DOMAIN)), data=data, files=files)
+            if r_vp.status_code != 201:
+                return "Failed update profile"
+            client.updateProfilePicture(pict, 'vp')
+            return "Success update profile"
+        except Exception as e:
+            raise Exception("Error change video and picture profile %s"%str(e))
+	
+	elif cmd == "cvp":
+      a = line.downloadFileWithURL("https://www.google.co.id/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwiZ38aH-u7cAhUKwI8KHZzhCK4QjRx6BAgBEAU&url=http%3A%2F%2Flostinanime.com%2F2016%2F06%2Ftaaka-kun-wa-itsumo-kedaruge-12-end-series-review%2F&psig=AOvVaw1_cSRzfH8lQEmVoBAvX-Mg&ust=1534418918112346")
+       b = line.downloadFileWithURL("https://www.youtube.com/watch?v=9E0Dr95yblg&index=3&t=0s&list=LLbUVHqBeWXwc_DlRXq6xdaA")
+         changeVideoAndPictureProfile(a, b)
+	
