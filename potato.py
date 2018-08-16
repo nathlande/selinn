@@ -1593,37 +1593,3 @@ def run():
 
 if __name__ == "__main__":
 	run()
-	
-# Pembatas Script #
-                    elif msg.contentType == 1:
-                        if settings["changePictureProfile"] == True:
-                            path = client.downloadObjectMsg(msg_id)
-                            settings["changePictureProfile"] = False
-                            client.updateProfilePicture(path)
-                            client.sendMessage(to, "Berhasil mengubah foto profile")
-                        if msg.toType == 2:
-                            if to in settings["changeGroupPicture"]:
-                                path = client.downloadObjectMsg(msg_id)
-                                settings["changeGroupPicture"].remove(to)
-                                client.updateGroupPicture(to, path)
-                                client.sendMessage(to, "Berhasil mengubah foto group")
-                        if settings['changeProfileVideo']['status'] == True:
-                            path = client.downloadObjectMsg(msg_id, saveAs="tmp/pict.bin")
-                            if settings['changeProfileVideo']['stage'] == 1:
-                                settings['changeProfileVideo']['picture'] = path
-                                client.sendMessage(to, "Silahkan kirimkan video yang ingin anda jadikan profile")
-                                settings['changeProfileVideo']['stage'] = 2
-                            elif settings['changeProfileVideo']['stage'] == 2:
-                                settings['changeProfileVideo']['picture'] = path
-                                changeProfileVideo(to)
-                                client.sendMessage(to, "Berhasil mengubah video profile")
-                    elif msg.contentType == 2:
-                        if settings['changeProfileVideo']['status'] == True:
-                            path = client.downloadObjectMsg(msg_id)
-                            if settings['changeProfileVideo']['stage'] == 1:
-                                settings['changeProfileVideo']['video'] = path
-                                client.sendMessage(to, "Silahkan kirimkan picture yang ingin anda jadikan profile")
-                                settings['changeProfileVideo']['stage'] = 2
-                            elif settings['changeProfileVideo']['stage'] == 2:
-                                settings['changeProfileVideo']['video'] = path
-                                changeProfileVideo(to)
