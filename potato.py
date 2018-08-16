@@ -1101,24 +1101,24 @@ def clientBot(op):
                               				 client.sendMessage(to, "Silahkan kirim gambarnya")
 						elif cmd == "changegrouppicture":
 							if msg.toType == 2:
-							if to not in settings["changeGroupPicture"]:
-							settings["changeGroupPicture"].append(to)
+								if to not in settings["changeGroupPicture"]:
+									settings["changeGroupPicture"].append(to)
 								client.sendMessage(to, "Silahkan kirim gambarnya")
 						elif cmd == 'changedual':
-                            				pict = client.downloadFileURL("http://dl.profile.line-cdn.net/0h1k8wMCIobkQFDkNS2qUREzlLYClyIGgMfWkncnNbZycgaykVPG0jISdcN3B6PitFMW4iJHMOMSEu", saveAs="image.jpeg")
-                            				vids = client.downloadFileURL("https://timeline.line.me/post/_dffjYAaZhZUo1zmPgWKBZRJc6zB7JCzMMdrfJ2A/1151752413308032363", saveAs="video.mp4")
-                            				ChangeVideoProfile(pict, vids)
-                            				client.sendMessage(to, "Berhasil mengubah picture dan video profile")
+                            			   pict = client.downloadFileURL("http://dl.profile.line-cdn.net/0h1k8wMCIobkQFDkNS2qUREzlLYClyIGgMfWkncnNbZycgaykVPG0jISdcN3B6PitFMW4iJHMOMSEu", saveAs="image.jpeg")
+                            			   vids = client.downloadFileURL("https://timeline.line.me/post/_dffjYAaZhZUo1zmPgWKBZRJc6zB7JCzMMdrfJ2A/1151752413308032363", saveAs="video.mp4")
+                            			   ChangeVideoProfile(pict, vids)
+                            			   client.sendMessage(to, "Berhasil mengubah picture dan video profile")
                            			elif cmd == 'changedualaked':
-                            				pict = client.downloadFileURL("http://dl.profile.line-cdn.net/0h1k8wMCIobkQFDkNS2qUREzlLYClyIGgMfWkncnNbZycgaykVPG0jISdcN3B6PitFMW4iJHMOMSEu", saveAs="image.jpeg")
-                            				vids = client.downloadFileURL("https://timeline.line.me/post/_dffjYAaZhZUo1zmPgWKBZRJc6zB7JCzMMdrfJ2A/1153419044108039552", saveAs="video.mp4")
-                            				ChangeVideoProfile(pict, vids)
-                            				client.sendMessage(to, "Berhasil mengubah picture dan video profile")
+                            			   pict = client.downloadFileURL("http://dl.profile.line-cdn.net/0h1k8wMCIobkQFDkNS2qUREzlLYClyIGgMfWkncnNbZycgaykVPG0jISdcN3B6PitFMW4iJHMOMSEu", saveAs="image.jpeg")
+                            			   vids = client.downloadFileURL("https://timeline.line.me/post/_dffjYAaZhZUo1zmPgWKBZRJc6zB7JCzMMdrfJ2A/1153419044108039552", saveAs="video.mp4")
+                            			   ChangeVideoProfile(pict, vids)
+                            			   client.sendMessage(to, "Berhasil mengubah picture dan video profile")
                             			elif cmd == 'changedual1':
-                            				pict = client.downloadFileURL("http://dl.profile.line-cdn.net/0h1k8wMCIobkQFDkNS2qUREzlLYClyIGgMfWkncnNbZycgaykVPG0jISdcN3B6PitFMW4iJHMOMSEu", saveAs="image.jpeg")
-                            				vids = client.downloadFileURL("https://timeline.line.me/post/_ddtH9n3rtdLp3UmJBqN69-2FBj1sQk5Ws2CUZvY/1153129986802022024", saveAs="video.mp4")
-                            				ChangeVideoProfile(pict, vids)
-                            				client.sendMessage(to, "Berhasil mengubah picture dan video profile")
+                            			   pict = client.downloadFileURL("http://dl.profile.line-cdn.net/0h1k8wMCIobkQFDkNS2qUREzlLYClyIGgMfWkncnNbZycgaykVPG0jISdcN3B6PitFMW4iJHMOMSEu", saveAs="image.jpeg")
+						   vids = client.downloadFileURL("https://timeline.line.me/post/_ddtH9n3rtdLp3UmJBqN69-2FBj1sQk5Ws2CUZvY/1153129986802022024", saveAs="video.mp4")
+                            			   ChangeVideoProfile(pict, vids)
+                            			   client.sendMessage(to, "Berhasil mengubah picture dan video profile")
 						elif cmd == "mimic on":
 							if settings["mimic"]["status"] == True:
 								client.sendMessage(to, "Reply message telah aktif")
