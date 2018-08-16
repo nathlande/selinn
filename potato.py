@@ -1098,7 +1098,7 @@ def clientBot(op):
 									read['readMember'][to] = []
 						elif cmd == "changepictureprofile":
                               				  settings["changePictureProfile"] = True
-                              				 	 client.sendMessage(to, "Silahkan kirim gambarnya")
+                              				 	client.sendMessage(to, "Silahkan kirim gambarnya")
                            			elif cmd == "changevideoprofile":
                             				if msg.contentType == 0:
                               			      	  settings["ChangeVideoProfilevid"] = True
@@ -1107,12 +1107,12 @@ def clientBot(op):
                                   		      		vids = client.downloadObjectMsg(msg_id,saveAs="tmp/vid.bin")
                                       			  settings["ChangeVideoProfilevid"] = False
                                       			  settings["changePictureProfile"] = True
-                                      				  client.sendMessage(to, "Send gambarnya")
-                                       			 if msg.contentType == 1:
-                                       			     vids = client.downloadObjectMsg(msg_id)
-                                         		   settings["ChangeVideoProfilePicture"] = False
-                                         			   ChangeVideoProfile(vids)
-                                          			  client.sendMessage(to, "Success")
+                                      				client.sendMessage(to, "Send gambarnya")
+                                       			if msg.contentType == 1:
+                                       			        vids = client.downloadObjectMsg(msg_id)
+                                         		  settings["ChangeVideoProfilePicture"] = False
+									ChangeVideoProfile(vids)
+                                          			client.sendMessage(to, "Success")
 						 elif cmd == "changevid":
 							settings['changeProfileVideo']['status'] = True
 							settings['changeProfileVideo']['stage'] = 1
