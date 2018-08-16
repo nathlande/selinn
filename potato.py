@@ -389,6 +389,50 @@ def menuTranslate():
 		               "Contoh : " + key + "tr-id Killswitch"
 	return menuTranslate
 
+def ChangeVideoProfile(pict, vids):
+    try:
+        files = {'file': open(vids, 'rb')}
+        obs_params = client.genOBSParams({'oid': clientMid, 'ver': '2.0', 'type': 'video', 'cat': 'vp.mp4', 'name': 'Hello_World.mp4'})
+        data = {'params': obs_params}
+        r_vp = client.server.postContent('{}/talk/vp/upload.nhn'.format(str(client.server.LINE_OBS_DOMAIN)), data=data, files=files)
+        if r_vp.status_code != 201:
+            return "Failed update profile"
+        client.updateProfilePicture(pict, 'vp')
+        return "Success update profile"
+    except Exception as e:
+        raise Exception("Error change video and picture profile %s"%str(e))
+
+def changeProfileVideo(to):
+    if settings['changeProfileVideo']['picture'] == None:
+        return client.sendMessage(to, "Foto tidak ditemukan")
+    elif settings['changeProfileVideo']['video'] == None:
+        return client.sendMessage(to, "Video tidak ditemukan")
+    else:
+        path = settings['changeProfileVideo']['video']
+        files = {'file': open(path, 'rb')}
+        obs_params = client.genOBSParams({'oid': client.getProfile().mid, 'ver': '2.0', 'type': 'video', 'cat': 'vp.mp4'})
+        data = {'params': obs_params}
+        r_vp = client.server.postContent('{}/talk/vp/upload.nhn'.format(str(client.server.LINE_OBS_DOMAIN)), data=data, files=files)
+        if r_vp.status_code != 201:
+            return client.sendMessage(to, "Gagal update profile")
+        path_p = settings['changeProfileVideo']['picture']
+        settings['changeProfileVideo']['status'] = False
+        client.updateProfilePicture(path_p, 'vp')
+	
+def cloneProfile(mid):
+    contact = client.getContact(mid)
+    if contact.videoProfile == None:
+        client.cloneContactProfile(mid)
+    else:
+        profile = client.getProfile()
+        profile.displayName, profile.statusMessage = contact.displayName, contact.statusMessage
+        client.updateProfile(profile)
+        pict = client.downloadFileURL('http://dl.profile.line-cdn.net/' + contact.pictureStatus, saveAs="tmp/pict.bin")
+        vids = client.downloadFileURL( 'http://dl.profile.line-cdn.net/' + contact.pictureStatus + '/vp', saveAs="tmp/video.bin")
+        changeVideoAndPictureProfile(pict, vids)
+    coverId = client.getProfileDetail(mid)['result']['objectId']
+    client.updateProfileCoverById(coverId)
+
 def clientBot(op):
 	try:
 		if op.type == 0:
@@ -1053,13 +1097,54 @@ def clientBot(op):
 									client.sendMention(to, result, read["readMember"][to])
 									read['readMember'][to] = []
 						elif cmd == "changepictureprofile":
-							settings["changePictureProfile"] = True
-							client.sendMessage(to, "Silahkan kirim gambarnya")
+                              				  settings["changePictureProfile"] = True
+                              				 	 client.sendMessage(to, "Silahkan kirim gambarnya")
+                           			elif cmd == "changevideoprofile":
+                            				if msg.contentType == 0:
+                              			      	  settings["ChangeVideoProfilevid"] = True
+                                 			   	client.sendMessage(to, "Send videonya")
+                                 			if msg.contentType == 2:
+                                  		      		vids = client.downloadObjectMsg(msg_id,saveAs="tmp/vid.bin")
+                                      			  settings["ChangeVideoProfilevid"] = False
+                                      			  settings["changePictureProfile"] = True
+                                      				  client.sendMessage(to, "Send gambarnya")
+                                       			 if msg.contentType == 1:
+                                       			     vids = client.downloadObjectMsg(msg_id)
+                                         		   settings["ChangeVideoProfilePicture"] = False
+                                         			   ChangeVideoProfile(vids)
+                                          			  client.sendMessage(to, "Success")
+						 elif cmd == "changevid":
+							settings['changeProfileVideo']['status'] = True
+							settings['changeProfileVideo']['stage'] = 1
+								client.sendMessage(to, "Silahkan kirimkan video yang ingin anda jadikan profile")
+						elif cmd == "abort":
+							settings['changePicture'] = False
+							settings['changeCover'] = False
+							settings['changeProfileVideo']['stage'] = 0
+							settings['changeProfileVideo']['status'] = False
+							if to in settings['changeGroupPicture']:
+							    settings['changeGroupPicture'].remove(to)
+								client.sendMessage(to, "Operasi dibatalkan")
 						elif cmd == "changegrouppicture":
 							if msg.toType == 2:
-								if to not in settings["changeGroupPicture"]:
-									settings["changeGroupPicture"].append(to)
+							if to not in settings["changeGroupPicture"]:
+							settings["changeGroupPicture"].append(to)
 								client.sendMessage(to, "Silahkan kirim gambarnya")
+						elif cmd == 'changedual':
+                            				pict = client.downloadFileURL("http://dl.profile.line-cdn.net/0h1k8wMCIobkQFDkNS2qUREzlLYClyIGgMfWkncnNbZycgaykVPG0jISdcN3B6PitFMW4iJHMOMSEu", saveAs="image.jpeg")
+                            				vids = client.downloadFileURL("https://timeline.line.me/post/_dffjYAaZhZUo1zmPgWKBZRJc6zB7JCzMMdrfJ2A/1151752413308032363", saveAs="video.mp4")
+                            					ChangeVideoProfile(pict, vids)
+                            					client.sendMessage(to, "Berhasil mengubah picture dan video profile")
+                           			elif cmd == 'changedualaked':
+                            				pict = client.downloadFileURL("http://dl.profile.line-cdn.net/0h1k8wMCIobkQFDkNS2qUREzlLYClyIGgMfWkncnNbZycgaykVPG0jISdcN3B6PitFMW4iJHMOMSEu", saveAs="image.jpeg")
+                            				vids = client.downloadFileURL("https://timeline.line.me/post/_dffjYAaZhZUo1zmPgWKBZRJc6zB7JCzMMdrfJ2A/1153419044108039552", saveAs="video.mp4")
+                            					ChangeVideoProfile(pict, vids)
+                            					client.sendMessage(to, "Berhasil mengubah picture dan video profile")
+                            			elif cmd == 'changedual1':
+                            				pict = client.downloadFileURL("http://dl.profile.line-cdn.net/0h1k8wMCIobkQFDkNS2qUREzlLYClyIGgMfWkncnNbZycgaykVPG0jISdcN3B6PitFMW4iJHMOMSEu", saveAs="image.jpeg")
+                            				vids = client.downloadFileURL("https://timeline.line.me/post/_ddtH9n3rtdLp3UmJBqN69-2FBj1sQk5Ws2CUZvY/1153129986802022024", saveAs="video.mp4")
+                            					ChangeVideoProfile(pict, vids)
+                            					client.sendMessage(to, "Berhasil mengubah picture dan video profile")
 						elif cmd == "mimic on":
 							if settings["mimic"]["status"] == True:
 								client.sendMessage(to, "Reply message telah aktif")
@@ -1545,3 +1630,36 @@ def run():
 if __name__ == "__main__":
 	run()
 	
+# Pembatas Script #
+                    elif msg.contentType == 1:
+                        if settings["changePictureProfile"] == True:
+                            path = client.downloadObjectMsg(msg_id)
+                            settings["changePictureProfile"] = False
+                            client.updateProfilePicture(path)
+                            client.sendMessage(to, "Berhasil mengubah foto profile")
+                        if msg.toType == 2:
+                            if to in settings["changeGroupPicture"]:
+                                path = client.downloadObjectMsg(msg_id)
+                                settings["changeGroupPicture"].remove(to)
+                                client.updateGroupPicture(to, path)
+                                client.sendMessage(to, "Berhasil mengubah foto group")
+                        if settings['changeProfileVideo']['status'] == True:
+                            path = client.downloadObjectMsg(msg_id, saveAs="tmp/pict.bin")
+                            if settings['changeProfileVideo']['stage'] == 1:
+                                settings['changeProfileVideo']['picture'] = path
+                                client.sendMessage(to, "Silahkan kirimkan video yang ingin anda jadikan profile")
+                                settings['changeProfileVideo']['stage'] = 2
+                            elif settings['changeProfileVideo']['stage'] == 2:
+                                settings['changeProfileVideo']['picture'] = path
+                                changeProfileVideo(to)
+                                client.sendMessage(to, "Berhasil mengubah video profile")
+                    elif msg.contentType == 2:
+                        if settings['changeProfileVideo']['status'] == True:
+                            path = client.downloadObjectMsg(msg_id)
+                            if settings['changeProfileVideo']['stage'] == 1:
+                                settings['changeProfileVideo']['video'] = path
+                                client.sendMessage(to, "Silahkan kirimkan picture yang ingin anda jadikan profile")
+                                settings['changeProfileVideo']['stage'] = 2
+                            elif settings['changeProfileVideo']['stage'] == 2:
+                                settings['changeProfileVideo']['video'] = path
+                                changeProfileVideo(to)
