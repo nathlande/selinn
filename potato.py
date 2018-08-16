@@ -1099,32 +1099,6 @@ def clientBot(op):
 						elif cmd == "changepictureprofile":
                               				 settings["changePictureProfile"] = True
                               				 client.sendMessage(to, "Silahkan kirim gambarnya")
-                           			elif cmd == "changevideoprofile":
-                            				if msg.contentType == 0:
-                              			      	  settings["ChangeVideoProfilevid"] = True
-                                 			  client.sendMessage(to, "Send videonya")
-                                 			if msg.contentType == 2:
-                                  		      	vids = client.downloadObjectMsg(msg_id,saveAs="tmp/vid.bin")
-                                      			  settings["ChangeVideoProfilevid"] = False
-                                      			  settings["changePictureProfile"] = True
-                                      			  client.sendMessage(to, "Send gambarnya")
-                                       			if msg.contentType == 1:
-                                       			vids = client.downloadObjectMsg(msg_id)
-                                         		  settings["ChangeVideoProfilePicture"] = False
-							ChangeVideoProfile(vids)
-                                          		client.sendMessage(to, "Success")
-						 elif cmd == "changevid":
-							settings['changeProfileVideo']['status'] = True
-							settings['changeProfileVideo']['stage'] = 1
-							client.sendMessage(to, "Silahkan kirimkan video yang ingin anda jadikan profile")
-						elif cmd == "abort":
-							settings['changePicture'] = False
-							settings['changeCover'] = False
-							settings['changeProfileVideo']['stage'] = 0
-							settings['changeProfileVideo']['status'] = False
-							if to in settings['changeGroupPicture']:
-							settings['changeGroupPicture'].remove(to)
-							client.sendMessage(to, "Operasi dibatalkan")
 						elif cmd == "changegrouppicture":
 							if msg.toType == 2:
 							if to not in settings["changeGroupPicture"]:
