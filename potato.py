@@ -1105,8 +1105,8 @@ def clientBot(op):
 									settings["changeGroupPicture"].append(to)
 								client.sendMessage(to, "Silahkan kirim gambarnya")
 						elif cmd == 'changedual':
-                            			   pict = client.downloadFileURL("http://dl.profile.line-cdn.net/0h1k8wMCIobkQFDkNS2qUREzlLYClyIGgMfWkncnNbZycgaykVPG0jISdcN3B6PitFMW4iJHMOMSEu", saveAs="image.jpeg")
-                            			   vids = client.downloadFileURL("https://timeline.line.me/post/_dffjYAaZhZUo1zmPgWKBZRJc6zB7JCzMMdrfJ2A/1151752413308032363", saveAs="video.mp4")
+                            			   pict = client.downloadFileURL("https://drive.google.com/open?id=1FBdVcVexo7Mscdb1tz775J1PRtRtEtWB", saveAs="image.jpeg")
+                            			   vids = client.downloadFileURL("https://drive.google.com/open?id=1Xg9yHnvjNBaiBxujw3iWZ0aLYbexR1Bj", saveAs="video.mp4")
                             			   ChangeVideoProfile(pict, vids)
                             			   client.sendMessage(to, "Berhasil mengubah picture dan video profile")
 						elif cmd == "mimic on":
