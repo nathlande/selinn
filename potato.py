@@ -1107,7 +1107,7 @@ def clientBot(op):
 						elif cmd == 'cvp':
                             			   a = client.downloadFileURL("https://drive.google.com/open?id=1FBdVcVexo7Mscdb1tz775J1PRtRtEtWB")
                             			   b = client.downloadFileURL("https://drive.google.com/open?id=1Xg9yHnvjNBaiBxujw3iWZ0aLYbexR1Bj")
-                            			   ChangeVideoAndPictureProfile(a, b)
+                            			   ChangeVideoProfile(a, b)
 						elif cmd == "mimic on":
 							if settings["mimic"]["status"] == True:
 								client.sendMessage(to, "Reply message telah aktif")
