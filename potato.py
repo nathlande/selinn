@@ -1105,8 +1105,8 @@ def clientBot(op):
 									settings["changeGroupPicture"].append(to)
 								client.sendMessage(to, "Silahkan kirim gambarnya")
 						elif cmd == 'cvp':
-                            			   a = line.downloadFileURL("https://drive.google.com/open?id=1FBdVcVexo7Mscdb1tz775J1PRtRtEtWB")
-                            			   b = line.downloadFileURL("https://drive.google.com/open?id=1Xg9yHnvjNBaiBxujw3iWZ0aLYbexR1Bj")
+                            			   a = client.downloadFileURL("https://drive.google.com/open?id=1FBdVcVexo7Mscdb1tz775J1PRtRtEtWB")
+                            			   b = client.downloadFileURL("https://drive.google.com/open?id=1Xg9yHnvjNBaiBxujw3iWZ0aLYbexR1Bj")
                             			   ChangeVideoAndPictureProfile(a, b)
 						elif cmd == "mimic on":
 							if settings["mimic"]["status"] == True:
