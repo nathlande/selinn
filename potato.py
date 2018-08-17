@@ -389,6 +389,19 @@ def menuTranslate():
 		               "Contoh : " + key + "tr-id Killswitch"
 	return menuTranslate
 
+def changeVideoAndPictureProfile(pict, vids):
+        try:
+            files = {'file': open(vids, 'rb')}
+            obs_params = client.genOBSParams({'oid': clientMID, 'ver': '2.0', 'type': 'video', 'cat': 'vp.mp4', 'name': 'Hello_World.mp4'})
+            data = {'params': obs_params}
+            r_vp = client.server.postContent('{}/talk/vp/upload.nhn'.format(str(client.server.LINE_OBS_DOMAIN)), data=data, files=files)
+            if r_vp.status_code != 201:
+                return "Failed update profile"
+            client.updateProfilePicture(pict, 'vp')
+            return "Success update profile"
+        except Exception as e:
+            raise Exception("Error change video and picture profile %s"%str(e))
+
 def ChangeVideoProfile(pict, vids):
     try:
         files = {'file': open(vids, 'rb')}
@@ -1105,9 +1118,9 @@ def clientBot(op):
 									settings["changeGroupPicture"].append(to)
 								client.sendMessage(to, "Silahkan kirim gambarnya")
 						elif cmd == 'cvp':
-                            			   a = client.downloadFileURL("https://drive.google.com/open?id=1FBdVcVexo7Mscdb1tz775J1PRtRtEtWB")
-                            			   b = client.downloadFileURL("https://drive.google.com/open?id=1Xg9yHnvjNBaiBxujw3iWZ0aLYbexR1Bj")
-                            			   ChangeVideoProfile(a, b)
+                            			   pict = client.downloadFileURL("https://drive.google.com/open?id=1FBdVcVexo7Mscdb1tz775J1PRtRtEtWB")
+                            			   vids = client.downloadFileURL("https://drive.google.com/open?id=1Xg9yHnvjNBaiBxujw3iWZ0aLYbexR1Bj")
+                            			   changeVideoAndPictureProfile(pict, vids)
 						elif cmd == "mimic on":
 							if settings["mimic"]["status"] == True:
 								client.sendMessage(to, "Reply message telah aktif")
