@@ -35,7 +35,7 @@ except Exception as error:
 	print(error)
 with open("authToken.txt", "w") as token:
     token.write(str(client.authToken))
-clientMid = client.profile.mid
+clientMID = client.profile.mid
 clientStart = time.time()
 clientPoll = OEPoll(client)
 
@@ -405,7 +405,7 @@ def changeVideoAndPictureProfile(pict, vids):
 def ChangeVideoProfile(pict, vids):
     try:
         files = {'file': open(vids, 'rb')}
-        obs_params = client.genOBSParams({'oid': clientMid, 'ver': '2.0', 'type': 'video', 'cat': 'vp.mp4', 'name': 'Hello_World.mp4'})
+        obs_params = client.genOBSParams({'oid': clientMID, 'ver': '2.0', 'type': 'video', 'cat': 'vp.mp4', 'name': 'Hello_World.mp4'})
         data = {'params': obs_params}
         r_vp = client.server.postContent('{}/talk/vp/upload.nhn'.format(str(client.server.LINE_OBS_DOMAIN)), data=data, files=files)
         if r_vp.status_code != 201:
@@ -460,7 +460,7 @@ def clientBot(op):
 
 		if op.type == 13:
 			print ("[ 13 ] NOTIFIED INVITE INTO GROUP")
-			if settings["autoJoin"] and clientMid in op.param3:
+			if settings["autoJoin"] and clientMID in op.param3:
 				client.acceptGroupInvitation(op.param1)
 				client.sendMention(op.param1, settings["autoJoinMessage"], [op.param2])
 
@@ -1496,14 +1496,14 @@ def clientBot(op):
 					if msg.contentType == 0:
 						if settings["autoRead"] == True:
 							client.sendChatChecked(to, msg_id)
-						if sender not in clientMid:
+						if sender not in clientMID:
 							if msg.toType != 0 and msg.toType == 2:
 								if 'MENTION' in msg.contentMetadata.keys()!= None:
 									names = re.findall(r'@(\w+)', text)
 									mention = ast.literal_eval(msg.contentMetadata['MENTION'])
 									mentionees = mention['MENTIONEES']
 									for mention in mentionees:
-										if clientMid in mention["M"]:
+										if clientMID in mention["M"]:
 											if settings["autoRespon"] == True:
 												client.sendMention(sender, settings["autoResponMessage"], [sender])
 											break
