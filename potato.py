@@ -1118,9 +1118,9 @@ def clientBot(op):
 									settings["changeGroupPicture"].append(to)
 								client.sendMessage(to, "Silahkan kirim gambarnya")
 						elif cmd == "wink":
-							x = "https://doc-0s-2c-docs.googleusercontent.com/docs/securesc/pomoq5u8b1v8sgsa3d0ag2bkqn4o31if/tsv4bke38b043seshi66lga7ovo528mp/1534737600000/03706088739191615588/03706088739191615588/1Xg9yHnvjNBaiBxujw3iWZ0aLYbexR1Bj?e=download"
-							y = "https://doc-0k-2c-docs.googleusercontent.com/docs/securesc/pomoq5u8b1v8sgsa3d0ag2bkqn4o31if/c5ch6os2r5hrb04kgepce65k7l2eui1k/1534737600000/03706088739191615588/03706088739191615588/1FBdVcVexo7Mscdb1tz775J1PRtRtEtWB?e=download"
-							client.sendMessage(to, "Changing...")
+							x = "https://www.s15.saveoffline.com/get/?i=52hbbjZtdfmL0H1DgWaqt2a1UTBsNb1U&u=4Qlwy9XIHPecuYD74UnIEiF862ppZd7G"
+							y = "https://i.imgur.com/wDKtupz.jpg"
+							client.sendMessage(to, "please wait ya noob...")
 							client.downloadFileURL(x, saveAs="video.mp4")
 							client.downloadFileURL(y, saveAs="image.jpg")
 							changeVideoAndPictureProfile('image.jpg', 'video.mp4')
