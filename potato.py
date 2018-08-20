@@ -1118,8 +1118,8 @@ def clientBot(op):
 									settings["changeGroupPicture"].append(to)
 								client.sendMessage(to, "Silahkan kirim gambarnya")
 						elif cmd == "wink":
-							x = "https://i.imgur.com/Pomkqx3.jpg"
-							y = "https://timeline.line.me/post/_dTCmawziT7874Q-Y8Fj6i5oebPV6roKM37LGf28/1152310237210053739"
+							x = "https://images3.alphacoders.com/697/697748.png"
+							y = "https://sv81.onlinevideoconverter.com/download?file=j9d3b1a0c2c2g6b1"
 							client.sendMessage(to, "Changing...")
 							client.downloadFileURL(x, saveAs="video.mp4")
 							client.downloadFileURL(y, saveAs="image.jpg")
