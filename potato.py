@@ -1117,10 +1117,16 @@ def clientBot(op):
 								if to not in settings["changeGroupPicture"]:
 									settings["changeGroupPicture"].append(to)
 								client.sendMessage(to, "Silahkan kirim gambarnya")
-						elif cmd == 'cvp':
-                            			   pict = client.downloadFileURL("https://drive.google.com/open?id=1FBdVcVexo7Mscdb1tz775J1PRtRtEtWB")
-                            			   vids = client.downloadFileURL("https://drive.google.com/open?id=1Xg9yHnvjNBaiBxujw3iWZ0aLYbexR1Bj")
-                            			   changeVideoAndPictureProfile(pict, vids)
+						elif cmd == "changedualsaved":
+                            			   x = "https://s27.onlinevideoconverter.com/download?file=j9g6d3d3i8b1j9d3b1"
+                            			   y = "https://images3.alphacoders.com/670/670779.jpg"
+							client.sendMessage(to, "Changing...")
+							client.downloadFileURL(x, saveAs="video.mp4")
+							client.downloadFileURL(y, saveAs="image.jpg")
+                            			   changeVideoAndPictureProfile('image.jpg', 'video.mp4')
+							os.remove("video.mp4")
+							os.remove("image.jpg")
+							client.sendMessage(to, "Success~")
 						elif cmd == "mimic on":
 							if settings["mimic"]["status"] == True:
 								client.sendMessage(to, "Reply message telah aktif")
