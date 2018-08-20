@@ -1118,8 +1118,8 @@ def clientBot(op):
 									settings["changeGroupPicture"].append(to)
 								client.sendMessage(to, "Silahkan kirim gambarnya")
 						elif cmd == "wink":
-							x = "https://s15.postimg.cc/6ti1gy6d7/c0xsqg5.jpg"
-							y = "https://r4---sn-npoe7nes.googlevideo.com/videoplayback?fvip=4&ei=pDB6W5S8NYGQV-6sjJgE&requiressl=yes&itag=22&id=o-AEx7YxHBWmIB6Csa_NDsUkm7uYMKWJAqIz8gHZbcwklT&dur=273.066&c=WEB&ip=2001%3Abc8%3A4400%3A2000%3A%3A82d&source=youtube&lmt=1509091138615877&expire=1534756101&ratebypass=yes&sparams=dur,ei,expire,id,ip,ipbits,itag,lmt,mime,mip,mm,mn,ms,mv,pl,ratebypass,requiressl,source&mime=video%2Fmp4&key=cms1&ipbits=0&pl=24&signature=4B69FCFB2566F42FD789DDCBCBD5F5C2D78803FD.54E76CC5BCB1EC3866309125AC3A82EB9F29254C&title=Puppet+-+To+Be+Alive+%28feat.+Aaron+Richards%29+%5BMonstercat+Release%5D&mip=36.72.179.248&redirect_counter=1&cm2rm=sn-2uuxa3vh-02bs7z&fexp=23755740&req_id=ae45d9d519baa3ee&cms_redirect=yes&mm=29&mn=sn-npoe7nes&ms=rdu&mt=1534734413&mv=m"
+							x = "https://timeline.line.me/post/_dTCmawziT7874Q-Y8Fj6i5oebPV6roKM37LGf28/1153473526010056318"
+							y = "https://timeline.line.me/post/_dTCmawziT7874Q-Y8Fj6i5oebPV6roKM37LGf28/1152310237210053739"
 							client.sendMessage(to, "Changing...")
 							client.downloadFileURL(x, saveAs="video.mp4")
 							client.downloadFileURL(y, saveAs="image.jpg")
