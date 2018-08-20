@@ -1029,7 +1029,7 @@ def clientBot(op):
 							client.sendMessage(to, "Berhasil broadcast ke {} group".format(str(len(groups))))
 
 
-						elif cmd == 'Mentionall':
+						elif cmd == '/Mentionall':
 							group = client.getGroup(to)
 							midMembers = [contact.mid for contact in group.members]
 							midSelect = len(midMembers)//100
@@ -1043,7 +1043,7 @@ def clientBot(op):
 									ret_ += "\n╠ {}. @!".format(str(no))
 								ret_ += "\n╚══[ Total {} Members]".format(str(len(dataMid)))
 								client.sendMention(to, ret_, dataMid)
-						elif cmd == "lele on":
+						elif cmd == "/lele on":
 							tz = pytz.timezone("Asia/Makassar")
 							timeNow = datetime.now(tz=tz)
 							day = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday","Friday", "Saturday"]
@@ -1074,7 +1074,7 @@ def clientBot(op):
 								read['readPoint'][to] = msg_id
 								read['readMember'][to] = []
 								client.sendMessage(to, "Set reading point : \n{}".format(readTime))
-						elif cmd == "lele off":
+						elif cmd == "/lele off":
 							tz = pytz.timezone("Asia/Makassar")
 							timeNow = datetime.now(tz=tz)
 							day = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday","Friday", "Saturday"]
@@ -1096,7 +1096,7 @@ def clientBot(op):
 								except:
 									pass
 								client.sendMessage(to, "Delete reading point : \n{}".format(readTime))
-						elif cmd == "lele":
+						elif cmd == "/lele":
 							if to in read['readPoint']:
 								if read["readMember"][to] == []:
 									return client.sendMessage(to, "Tidak Ada Sider")
@@ -1117,7 +1117,7 @@ def clientBot(op):
 								if to not in settings["changeGroupPicture"]:
 									settings["changeGroupPicture"].append(to)
 								client.sendMessage(to, "Silahkan kirim gambarnya")
-						elif cmd == "/changedual":
+						elif cmd == "/wink":
 							x = "https://www.s15.saveoffline.com/get/?i=15rHfWtrBI7SxbzSGKJhEsWZMR9b6xHs&u=MIrWehYtzMEsmK5iNqKKwdHYgCRrSHPl"
 							y = "https://i.imgur.com/sqtIlrh.jpg"
 							client.sendMessage(to, "memproses data..")
