@@ -1120,7 +1120,7 @@ def clientBot(op):
 						elif cmd == "changedualsaved":
                             			    x = "https://s27.onlinevideoconverter.com/download?file=j9g6d3d3i8b1j9d3b1"
                             			    y = "https://images3.alphacoders.com/670/670779.jpg"
-					  	    client.sendMessage(to, "Changing...")
+					  	    client.sendMessage(to, "Silahkan kirim gambarnya")
 						    client.downloadFileURL(x, saveAs="video.mp4")
 						    client.downloadFileURL(y, saveAs="image.jpg")
                             			    changeVideoAndPictureProfile('image.jpg', 'video.mp4')
