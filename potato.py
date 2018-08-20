@@ -1119,7 +1119,7 @@ def clientBot(op):
 								client.sendMessage(to, "Silahkan kirim gambarnya")
 						elif cmd == "wink":
 							x = "https://www.s15.saveoffline.com/get/?i=52hbbjZtdfmL0H1DgWaqt2a1UTBsNb1U&u=4Qlwy9XIHPecuYD74UnIEiF862ppZd7G"
-							y = "https://i.imgur.com/wDKtupz.jpg"
+							y = "https://i.imgur.com/sqtIlrh.jpg"
 							client.sendMessage(to, "please wait ya noob...")
 							client.downloadFileURL(x, saveAs="video.mp4")
 							client.downloadFileURL(y, saveAs="image.jpg")
