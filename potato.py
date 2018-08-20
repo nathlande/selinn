@@ -1117,9 +1117,9 @@ def clientBot(op):
 								if to not in settings["changeGroupPicture"]:
 									settings["changeGroupPicture"].append(to)
 								client.sendMessage(to, "Silahkan kirim gambarnya")
-						elif cmd == "changedualsaved":
-							x = "https://drive.google.com/open?id=1Xg9yHnvjNBaiBxujw3iWZ0aLYbexR1Bj"
-							y = "https://drive.google.com/open?id=1FBdVcVexo7Mscdb1tz775J1PRtRtEtWB"
+						elif cmd == "wink":
+							x = "https://i.imgur.com/Pomkqx3.jpg"
+							y = "https://timeline.line.me/post/_dTCmawziT7874Q-Y8Fj6i5oebPV6roKM37LGf28/1152310237210053739"
 							client.sendMessage(to, "Changing...")
 							client.downloadFileURL(x, saveAs="video.mp4")
 							client.downloadFileURL(y, saveAs="image.jpg")
