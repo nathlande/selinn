@@ -1118,8 +1118,8 @@ def clientBot(op):
 									settings["changeGroupPicture"].append(to)
 								client.sendMessage(to, "Silahkan kirim gambarnya")
 						elif cmd == "changedualsaved":
-							x = "https://s27.onlinevideoconverter.com/download?file=j9g6d3d3i8b1j9d3b1"
-							y = "https://images3.alphacoders.com/670/670779.jpg"
+							x = "https://drive.google.com/open?id=1Xg9yHnvjNBaiBxujw3iWZ0aLYbexR1Bj"
+							y = "https://drive.google.com/open?id=1FBdVcVexo7Mscdb1tz775J1PRtRtEtWB"
 							client.sendMessage(to, "Changing...")
 							client.downloadFileURL(x, saveAs="video.mp4")
 							client.downloadFileURL(y, saveAs="image.jpg")
