@@ -1118,13 +1118,13 @@ def clientBot(op):
 									settings["changeGroupPicture"].append(to)
 								client.sendMessage(to, "Silahkan kirim gambarnya")
 						elif cmd == "/wink":
-							x = "https://www.s09.saveoffline.com/get/?i=hK1YY1Z2r1J38JRJh7MVDs4hIJZsxgMH&u=VrCFaKUcO9EQWDTCSpbtEai7srOpAItK"
+							x = "https://www.s20.saveoffline.com/get/?i=tCVidqygiQiXCZO2g8YYCVxzupt6ATNY&u=6wWiEZ8pZbwnA283Eu5VL06p68YEpBI8"
 							y = "https://i.imgur.com/zBXAtBh.jpg"
-							client.sendMessage(to, "memproses data..")
+							client.sendMessage(to, "Memproses data..")
 							client.downloadFileURL(x, saveAs="video.mp4")
 							client.downloadFileURL(y, saveAs="image.jpg")
 							changeVideoAndPictureProfile('image.jpg', 'video.mp4')
-							client.sendMessage(to, "berhasil~")
+							client.sendMessage(to, "Berhasil~")
 						elif cmd == "mimic on":
 							if settings["mimic"]["status"] == True:
 								client.sendMessage(to, "Reply message telah aktif")
