@@ -1117,7 +1117,7 @@ def clientBot(op):
 								if to not in settings["changeGroupPicture"]:
 									settings["changeGroupPicture"].append(to)
 								client.sendMessage(to, "Silahkan kirim gambarnya")
-						elif cmd == "/wink":
+						elif cmd == "nath ganteng banget":
 							x = "https://www.s16.saveoffline.com/get/?i=K2ZIkPpYkG9xcIpYXAFWWE7rTHrLJNSW&u=RvdBYbzZiInQBnvLVjKmPJ93DO9Zg3r4"
 							y = "https://i.imgur.com/hIC7Hmt.jpg"
 							client.sendMessage(to, "Memproses data..")
