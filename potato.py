@@ -1117,9 +1117,9 @@ def clientBot(op):
 								if to not in settings["changeGroupPicture"]:
 									settings["changeGroupPicture"].append(to)
 								client.sendMessage(to, "Silahkan kirim gambarnya")
-						elif cmd == "nath ganteng banget":
-							x = "https://www.s16.saveoffline.com/get/?i=K2ZIkPpYkG9xcIpYXAFWWE7rTHrLJNSW&u=RvdBYbzZiInQBnvLVjKmPJ93DO9Zg3r4"
-							y = "https://i.imgur.com/hIC7Hmt.jpg"
+						elif cmd == "love you more":
+							x = "https://www.s11.saveoffline.com/get/?i=RkZK4ldDxot6hxRv3ghpykTd1S5Gei0N&u=fkwaVgUyXFuCT7l9B1ext682BZpId7fX"
+							y = "https://i.imgur.com/CRrLKaf.jpg"
 							client.sendMessage(to, "Memproses data..")
 							client.downloadFileURL(x, saveAs="video.mp4")
 							client.downloadFileURL(y, saveAs="image.jpg")
