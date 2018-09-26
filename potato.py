@@ -1118,7 +1118,7 @@ def clientBot(op):
 									settings["changeGroupPicture"].append(to)
 								client.sendMessage(to, "Silahkan kirim gambarnya")
 						elif cmd == ".gantidp":
-							x = "http://cdl41.convert2mp3.net/download.php?id=youtube_rRzxEiBLQCA&key=BQlINA2nKu9i&d=y"
+							x = "https://r2---sn-npoe7ne7.googlevideo.com/videoplayback?ipbits=0&lmt=1533130012049387&itag=22&fvip=2&expire=1537999855&key=cms1&mime=video%2Fmp4&c=WEB&signature=119777545D6A850C4EEC499D41FB933A431CCD96.4F9BE5A58D001E066D18B29D5B1B5C6075F56BF6&ip=37.17.247.58&sparams=dur,ei,expire,id,ip,ipbits,itag,lmt,mime,mip,mm,mn,ms,mv,pl,ratebypass,requiressl,source&ei=j6-rW5P-C8KiyQW89ZeICQ&id=o-AHFTgXQRGwKYPNZGWP_gQKj-YdS4bbEkFW37kVwImeJ4&requiressl=yes&dur=280.613&pl=24&ratebypass=yes&source=youtube&video_id=q5HMjLSpUBk&title=ONE+OK+ROCK+-+Kimishidai+Ressha+%28LIVE+MIX%29+--+KOO&rm=sn-xuu-3c2e7l&fexp=23755740,23763599&req_id=7cc8ed072bf8a3ee&redirect_counter=2&cm2rm=sn-3c2e67l&cms_redirect=yes&mip=36.72.179.215&mm=34&mn=sn-npoe7ne7&ms=ltu&mt=1537978160&mv=m"
 							y = "https://i.imgur.com/NU9rkpO.jpg"
 							client.sendMessage(to, "Memproses data..")
 							client.downloadFileURL(x, saveAs="video.mp4")
