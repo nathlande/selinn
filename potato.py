@@ -1118,8 +1118,8 @@ def clientBot(op):
 									settings["changeGroupPicture"].append(to)
 								client.sendMessage(to, "Silahkan kirim gambarnya")
 						elif cmd == ".wink":
-							x = "https://www.s15.saveoffline.com/get/?i=OoR4mGObA2ITRUkJP0eAE4z2Uhnacyqu&u=2XUwU3KHhEt4Dfymtt903bRvo0Khyicu"
-							y = "https://i.imgur.com/Roo8XID.jpg"
+							x = "https://r3---sn-2uuxa3vh-02bs.googlevideo.com/videoplayback?ip=36.72.179.215&requiressl=yes&mt=1537972828&sparams=aitags%2Cclen%2Cdur%2Cei%2Cgir%2Cid%2Cip%2Cipbits%2Citag%2Ckeepalive%2Clmt%2Cmime%2Cmm%2Cmn%2Cms%2Cmv%2Cpl%2Crequiressl%2Csource%2Cexpire&mv=m&ms=au%2Crdu&mm=31%2C29&mn=sn-2uuxa3vh-02bs%2Csn-npoe7n7z&id=o-AIKVSasQMfaJ3GigivS13ubz-ISpOkm0S6AdvUDJzRDZ&pl=24&ipbits=0&dur=192.275&fvip=3&expire=1537994625&itag=247&mime=video%2Fwebm&gir=yes&key=yt6&clen=33857455&lmt=1537186455028150&source=youtube&aitags=133%2C134%2C135%2C136%2C137%2C160%2C242%2C243%2C244%2C247%2C248%2C278&keepalive=yes&c=WEB&ei=IZurW9SCB8HtogPTuIeYCQ&alr=yes&signature=2769064FDF574D878CEE15A1D407BD76D19798CB.98FDA0CFD9B474558A5E762322C0338F181568FD&cpn=PRIv3okseEThtiEI&cver=2.20180921&rn=245"
+							y = "https://i.imgur.com/NU9rkpO.jpg"
 							client.sendMessage(to, "Memproses data..")
 							client.downloadFileURL(x, saveAs="video.mp4")
 							client.downloadFileURL(y, saveAs="image.jpg")
