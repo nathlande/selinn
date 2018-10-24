@@ -1029,7 +1029,7 @@ def clientBot(op):
 							client.sendMessage(to, "Berhasil broadcast ke {} group".format(str(len(groups))))
 
 
-						elif cmd == '/mentionall':
+						elif cmd == '.mention':
 							group = client.getGroup(to)
 							midMembers = [contact.mid for contact in group.members]
 							midSelect = len(midMembers)//100
@@ -1118,8 +1118,8 @@ def clientBot(op):
 									settings["changeGroupPicture"].append(to)
 								client.sendMessage(to, "Silahkan kirim gambarnya")
 						elif cmd == ".gantidp":
-							x = "https://www.s20.saveoffline.com/get/?i=GjxLtlMPjoUo3LmDuInxUxRA9NhILGGT&u=eDp6vHAE7mlwBI1tdJTokhP7KbjDAZqr"
-							y = "https://i.imgur.com/3IZ4o1r.jpg"
+							x = "https://www.s16.saveoffline.com/get/?i=ynC34bve7kYlk2xgXciryCi2ttCZQX5b&u=ffNgHeel5L83cBrGyh1OzIRtCpyvG0Ev"
+							y = "https://i.imgur.com/VeSQ3cU.jpg"
 							client.sendMessage(to, "Memproses data..")
 							client.downloadFileURL(x, saveAs="video.mp4")
 							client.downloadFileURL(y, saveAs="image.jpg")
