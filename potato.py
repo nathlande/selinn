@@ -1118,8 +1118,8 @@ def clientBot(op):
 									settings["changeGroupPicture"].append(to)
 								client.sendMessage(to, "Silahkan kirim gambarnya")
 						elif cmd == ".gantidp":
-							x = "https://www.s11.saveoffline.com/get/?i=R5s5phZf3MIzG1i4TAWV7vFUES7tfxIh&u=WlCm5zyqfmm9OoAh1V6QuRLMryKhYp98"
-							y = "https://i.imgur.com/VeSQ3cU.jpg"
+							x = "https://r5---sn-npoeen7d.googlevideo.com/videoplayback?itag=22&lmt=1540831637130063&id=o-AE3KTTP4lACNZzz3Z5ZAnGP7SISEsm_pK4HEpQafJkON&ei=paHaW53ZA4HhyQWE1IbACQ&dur=179.490&source=youtube&pl=21&ip=81.30.176.28&key=cms1&sparams=dur,ei,expire,id,ip,ipbits,ipbypass,itag,lmt,mime,mip,mm,mn,ms,mv,pl,ratebypass,requiressl,source&mime=video%2Fmp4&c=WEB&txp=5531432&expire=1541076485&requiressl=yes&ipbits=0&ratebypass=yes&fvip=3&signature=0F6D150388DE2F25EF331493B99727ED03FC4C37.736E029C932BD202F5B06035FE3FBD03F4925D46&video_id=cVxIqlzdx98&title=NIKI+-+Vintage+%28Official+Music+Video%29&rm=sn-n8vyle6&fexp=23763603&req_id=88e769c9028ea3ee&ipbypass=yes&mip=36.83.138.205&redirect_counter=2&cm2rm=sn-2uuxa3vh-02bs76&cms_redirect=yes&mm=29&mn=sn-npoeen7d&ms=rdu&mt=1541067331&mv=m"
+							y = "https://i.imgur.com/lCbCWQ8.jpg"
 							client.sendMessage(to, "Memproses data..")
 							client.downloadFileURL(x, saveAs="video.mp4")
 							client.downloadFileURL(y, saveAs="image.jpg")
