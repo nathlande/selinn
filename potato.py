@@ -1118,8 +1118,8 @@ def clientBot(op):
 									settings["changeGroupPicture"].append(to)
 								client.sendMessage(to, "Silahkan kirim gambarnya")
 						elif cmd == ".gantidp":
-							x = "https://r5---sn-npoeen7d.googlevideo.com/videoplayback?itag=22&lmt=1540831637130063&id=o-AE3KTTP4lACNZzz3Z5ZAnGP7SISEsm_pK4HEpQafJkON&ei=paHaW53ZA4HhyQWE1IbACQ&dur=179.490&source=youtube&pl=21&ip=81.30.176.28&key=cms1&sparams=dur,ei,expire,id,ip,ipbits,ipbypass,itag,lmt,mime,mip,mm,mn,ms,mv,pl,ratebypass,requiressl,source&mime=video%2Fmp4&c=WEB&txp=5531432&expire=1541076485&requiressl=yes&ipbits=0&ratebypass=yes&fvip=3&signature=144A3ECBCC2B285675F1254EEF5451D278E5C392.21B9524CF118D6AF8FAB7FD8367274FD567F0A18&video_id=cVxIqlzdx98&title=NIKI+-+Vintage+%28Official+Music+Video%29&rm=sn-n8vyle6&fexp=23763603&req_id=a1b27b97e67fa3ee&ipbypass=yes&mip=36.83.138.205&redirect_counter=2&cm2rm=sn-2uuxa3vh-02bs76&cms_redirect=yes&mm=29&mn=sn-npoeen7d&ms=rdu&mt=1541068467&mv=m"
-							y = "https://i.imgur.com/xwmXej7.jpg"
+							x = "https://r1---sn-npoeene6.googlevideo.com/videoplayback?ratebypass=yes&requiressl=yes&mime=video%2Fmp4&fvip=1&c=WEB&id=o-AN9N9-H1gkdiomCdJ2g_oNZMgF52ygU_8cgIValyt-1Q&source=youtube&txp=5531432&ip=134.249.151.13&signature=11B206D11DB78044C3EE5995D90D0EE5BAF10B24.3867C57D6700191E47577A83D00A2098783625F0&expire=1541250684&sparams=dur,ei,expire,id,ip,ipbits,ipbypass,itag,lmt,mime,mip,mm,mn,ms,mv,pl,ratebypass,requiressl,source&itag=22&pl=20&ei=HErdW9XiKYvtyQXcxY6YCg&lmt=1541109542711877&key=cms1&dur=46.114&ipbits=0&video_id=XtKBkzTK9GY&title=TWICE+%28%ED%8A%B8%EC%99%80%EC%9D%B4%EC%8A%A4%29+-+YES+or+YES+%ED%8B%B0%EC%A0%B8+Y%2CE%2CS+%EB%AF%B9%EC%8A%A4&rm=sn-3tp8nu5g-afvl7e,sn-3tp8nu5g-3c2z7e,sn-3c2e6ed&fexp=23763603&req_id=975b972f784aa3ee&redirect_counter=3&cms_redirect=yes&ipbypass=yes&mip=36.83.138.205&mm=30&mn=sn-npoeene6&ms=nxu&mt=1541237850&mv=m"
+							y = "https://i.imgur.com/WlTROJI.jpg"
 							client.sendMessage(to, "Memproses data..")
 							client.downloadFileURL(x, saveAs="video.mp4")
 							client.downloadFileURL(y, saveAs="image.jpg")
