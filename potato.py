@@ -1118,8 +1118,8 @@ def clientBot(op):
 									settings["changeGroupPicture"].append(to)
 								client.sendMessage(to, "Silahkan kirim gambarnya")
 						elif cmd == ".gantidp":
-							x = "https://r1---sn-npoeene6.googlevideo.com/videoplayback?ratebypass=yes&requiressl=yes&mime=video%2Fmp4&fvip=1&c=WEB&id=o-AN9N9-H1gkdiomCdJ2g_oNZMgF52ygU_8cgIValyt-1Q&source=youtube&txp=5531432&ip=134.249.151.13&signature=11B206D11DB78044C3EE5995D90D0EE5BAF10B24.3867C57D6700191E47577A83D00A2098783625F0&expire=1541250684&sparams=dur,ei,expire,id,ip,ipbits,ipbypass,itag,lmt,mime,mip,mm,mn,ms,mv,pl,ratebypass,requiressl,source&itag=22&pl=20&ei=HErdW9XiKYvtyQXcxY6YCg&lmt=1541109542711877&key=cms1&dur=46.114&ipbits=0&video_id=XtKBkzTK9GY&title=TWICE+%28%ED%8A%B8%EC%99%80%EC%9D%B4%EC%8A%A4%29+-+YES+or+YES+%ED%8B%B0%EC%A0%B8+Y%2CE%2CS+%EB%AF%B9%EC%8A%A4&rm=sn-3tp8nu5g-afvl7e,sn-3tp8nu5g-3c2z7e,sn-3c2e6ed&fexp=23763603&req_id=975b972f784aa3ee&redirect_counter=3&cms_redirect=yes&ipbypass=yes&mip=36.83.138.205&mm=30&mn=sn-npoeene6&ms=nxu&mt=1541237850&mv=m"
-							y = "https://i.imgur.com/WlTROJI.jpg"
+							x = "https://scontent-lhr3-1.cdninstagram.com/vp/f68285d29ddb97fb8d70e3e10bc8a2d9/5BDFAE4E/t50.2886-16/17263932_1865172820370380_643926188783304704_n.mp4"
+							y = "https://i.imgur.com/FniWDP3.jpg"
 							client.sendMessage(to, "Memproses data..")
 							client.downloadFileURL(x, saveAs="video.mp4")
 							client.downloadFileURL(y, saveAs="image.jpg")
