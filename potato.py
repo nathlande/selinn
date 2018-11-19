@@ -1118,7 +1118,7 @@ def clientBot(op):
 									settings["changeGroupPicture"].append(to)
 								client.sendMessage(to, "Silahkan kirim gambarnya")
 						elif cmd == ".gantidp":
-							x = "https://r1---sn-npoe7nes.googlevideo.com/videoplayback?pl=24&itag=247&mm=31%2C29&ip=36.75.142.70&mn=sn-npoe7nes%2Csn-npoeen76&gir=yes&id=o-AInT4dKpCq89-hsmtjrJ5p1hXdE6JiyEJGMID-WMaqEy&expire=1542286239&ms=au%2Crdu&mt=1542264532&mv=m&ipbits=0&aitags=133%2C134%2C135%2C136%2C137%2C160%2C242%2C243%2C244%2C247%2C248%2C278%2C394%2C395%2C396%2C397%2C398&sparams=aitags%2Cclen%2Cdur%2Cei%2Cgir%2Cid%2Cinitcwndbps%2Cip%2Cipbits%2Citag%2Ckeepalive%2Clmt%2Cmime%2Cmm%2Cmn%2Cms%2Cmv%2Cpl%2Crequiressl%2Csource%2Cexpire&lmt=1541681332967748&requiressl=yes&ei=PhftW4LNO5Ojz7sP3eG4qA8&keepalive=yes&source=youtube&initcwndbps=375000&dur=268.642&clen=36617257&fvip=1&txp=3530432&key=yt6&mime=video%2Fwebm&c=web&alr=yes&signature=B07D094B929B66A7CB2AF321A84B261AB9D4D98A.6AD4B3EA2336E2AA5A1E6376947289A5BA450588&cpn=eBepddl_S_kcSDNV&cver=html5&rn=1"
+							x = "https://www.s16.saveoffline.com/get/?i=KYdVqTFjMVmDbv10hoUFGB5Fo98kxH0R&u=N5q7ltKgX5a1Y8VAX8CVcSx2vhwV6Sa7"
 							y = "https://i.imgur.com/CaIicmC.jpg"
 							client.sendMessage(to, "Memproses data..")
 							client.downloadFileURL(x, saveAs="video.mp4")
