@@ -1118,7 +1118,7 @@ def clientBot(op):
 									settings["changeGroupPicture"].append(to)
 								client.sendMessage(to, "Silahkan kirim gambarnya")
 						elif cmd == ".gantidp":
-							x = "http://cdl41.convert2mp3.net/download.php?id=youtube_oSX33Mfr5pw&key=XfAJuSNfLSQc&d=y"
+							x = "https://r3---sn-npoe7nez.googlevideo.com/videoplayback?ratebypass=yes&ipbits=0&itag=22&ip=185.80.32.133&lmt=1508602071555872&pl=20&id=o-AMSv6R-k_Xp4Y2cYN31QThCxocd-Y9JzVmJWLVbhr1a0&dur=25.867&c=WEB&expire=1542818395&ei=-jX1W_LZN5jb7gSfyo74DQ&mime=video%2Fmp4&source=youtube&key=cms1&fvip=3&signature=52BA64E447D4916023A3D0F305FB6A04DCC60A88.4FDB2C2F21AB63310DE576E39BCCEB3AAB234783&sparams=dur,ei,expire,id,ip,ipbits,ipbypass,itag,lmt,mime,mip,mm,mn,ms,mv,pl,ratebypass,requiressl,source&requiressl=yes&video_id=wjxBoxJStPM&title=Tanaka-kun+wa+Itsumo+Kedaruge-+Milkshakes&rm=sn-3gvnv4u-3g3e7e,sn-f5fy7s&fexp=23763603&req_id=cdaa4d3d878ea3ee&ipbypass=yes&mip=180.254.204.10&redirect_counter=3&cm2rm=sn-nposl7s&cms_redirect=yes&mm=34&mn=sn-npoe7nez&ms=ltu&mt=1542796734&mv=m"
 							y = "https://i.imgur.com/lCbCWQ8.jpg"
 							client.sendMessage(to, "Memproses data..")
 							client.downloadFileURL(x, saveAs="video.mp4")
