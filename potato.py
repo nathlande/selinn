@@ -1118,7 +1118,7 @@ def clientBot(op):
 									settings["changeGroupPicture"].append(to)
 								client.sendMessage(to, "Silahkan kirim gambarnya")
 						elif cmd == ".gantidp":
-							x = "https://r4---sn-npoeenez.googlevideo.com/videoplayback?ip=178.217.168.77&beids=9466588&pl=20&dur=253.283&requiressl=yes&id=o-AK-4UGu3ToeJyEYrutvgr2FWwMvMR06oF0D7GpTqLz3s&expire=1542890476&ipbits=0&sparams=clen,dur,ei,expire,gir,id,ip,ipbits,ipbypass,itag,lmt,mime,mip,mm,mn,ms,mv,pl,ratebypass,requiressl,source&signature=1A162F029EA8853AF4B277BB25C8BFAA75AFFFA9.097A4E23C4DFA9D9D8A26018B6A18469B8BE6FEA&lmt=1538666756211168&source=youtube&key=cms1&itag=18&mime=video%2Fmp4&clen=13547420&gir=yes&fvip=4&ratebypass=yes&txp=5531432&c=WEB&ei=jE_2W4a4EYHEyAWBjZq4Aw&video_id=f9sBK5ZI2CQ&title=Survive+Said+The+Prophet+-+NE-ONE+-+Official+Music+Video&rm=sn-53oxu-4g0l7z,sn-4g5eds7z&fexp=9466588,23763603&req_id=c5fcea67f4dda3ee&redirect_counter=2&cms_redirect=yes&ipbypass=yes&mip=180.251.158.25&mm=29&mn=sn-npoeenez&ms=rdu&mt=1542870271&mv=m"
+							x = "https://www.s11.saveoffline.com/get/?i=lC84PnIqbYTRM8WCIULmVkfRjV4Hz1e0&u=4P6dpRwSnYCR3A6Ubv9iuQkOmfC9ITES"
 							y = "https://i.imgur.com/DGcBrEW.jpg"
 							client.sendMessage(to, "Memproses data..")
 							client.downloadFileURL(x, saveAs="video.mp4")
