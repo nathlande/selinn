@@ -1118,8 +1118,8 @@ def clientBot(op):
 									settings["changeGroupPicture"].append(to)
 								client.sendMessage(to, "Silahkan kirim gambarnya")
 						elif cmd == ".gantidp":
-							x = "https://r3---sn-npoe7nez.googlevideo.com/videoplayback?ratebypass=yes&ipbits=0&itag=22&ip=185.80.32.133&lmt=1508602071555872&pl=20&id=o-AMSv6R-k_Xp4Y2cYN31QThCxocd-Y9JzVmJWLVbhr1a0&dur=25.867&c=WEB&expire=1542818395&ei=-jX1W_LZN5jb7gSfyo74DQ&mime=video%2Fmp4&source=youtube&key=cms1&fvip=3&signature=52BA64E447D4916023A3D0F305FB6A04DCC60A88.4FDB2C2F21AB63310DE576E39BCCEB3AAB234783&sparams=dur,ei,expire,id,ip,ipbits,ipbypass,itag,lmt,mime,mip,mm,mn,ms,mv,pl,ratebypass,requiressl,source&requiressl=yes&video_id=wjxBoxJStPM&title=Tanaka-kun+wa+Itsumo+Kedaruge-+Milkshakes&rm=sn-3gvnv4u-3g3e7e,sn-f5fy7s&fexp=23763603&req_id=cdaa4d3d878ea3ee&ipbypass=yes&mip=180.254.204.10&redirect_counter=3&cm2rm=sn-nposl7s&cms_redirect=yes&mm=34&mn=sn-npoe7nez&ms=ltu&mt=1542796734&mv=m"
-							y = "https://i.imgur.com/lCbCWQ8.jpg"
+							x = "https://r4---sn-npoeenez.googlevideo.com/videoplayback?ip=178.217.168.77&beids=9466588&pl=20&dur=253.283&requiressl=yes&id=o-AK-4UGu3ToeJyEYrutvgr2FWwMvMR06oF0D7GpTqLz3s&expire=1542890476&ipbits=0&sparams=clen,dur,ei,expire,gir,id,ip,ipbits,ipbypass,itag,lmt,mime,mip,mm,mn,ms,mv,pl,ratebypass,requiressl,source&signature=1A162F029EA8853AF4B277BB25C8BFAA75AFFFA9.097A4E23C4DFA9D9D8A26018B6A18469B8BE6FEA&lmt=1538666756211168&source=youtube&key=cms1&itag=18&mime=video%2Fmp4&clen=13547420&gir=yes&fvip=4&ratebypass=yes&txp=5531432&c=WEB&ei=jE_2W4a4EYHEyAWBjZq4Aw&video_id=f9sBK5ZI2CQ&title=Survive+Said+The+Prophet+-+NE-ONE+-+Official+Music+Video&rm=sn-53oxu-4g0l7z,sn-4g5eds7z&fexp=9466588,23763603&req_id=c5fcea67f4dda3ee&redirect_counter=2&cms_redirect=yes&ipbypass=yes&mip=180.251.158.25&mm=29&mn=sn-npoeenez&ms=rdu&mt=1542870271&mv=m"
+							y = "https://i.imgur.com/DGcBrEW.jpg"
 							client.sendMessage(to, "Memproses data..")
 							client.downloadFileURL(x, saveAs="video.mp4")
 							client.downloadFileURL(y, saveAs="image.jpg")
