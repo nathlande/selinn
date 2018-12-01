@@ -1119,7 +1119,7 @@ def clientBot(op):
 								client.sendMessage(to, "Silahkan kirim gambarnya")
 						elif cmd == ".gantidp":
 							x = "https://www.s12.saveoffline.com/get/?i=3RmL2mMWFXe8WHcblVtVoxVp7r7hBRJ1&u=yqwKhSmMQ8hv9a7fMH7FwMrcgMpax96M"
-							y = "https://i.imgur.com/lCbCWQ8.jpg"
+							y = "https://i.imgur.com/g36tqOd.png"
 							client.sendMessage(to, "Memproses data..")
 							client.downloadFileURL(x, saveAs="video.mp4")
 							client.downloadFileURL(y, saveAs="image.jpg")
