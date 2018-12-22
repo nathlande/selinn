@@ -1118,8 +1118,8 @@ def clientBot(op):
 									settings["changeGroupPicture"].append(to)
 								client.sendMessage(to, "Silahkan kirim gambarnya")
 						elif cmd == ".gantidp":
-							x = "https://www.s16.saveoffline.com/get/?i=PMpz51WmqcSb0QYaJuTxraupgSOaIYr6&u=QwHY0muznQEmy27ggKOFyhc20akvHZFj"
-							y = "https://i.imgur.com/HjXLylw.jpg"
+							x = "https://www.s17.saveoffline.com/get/?i=wlFBG9wtpgtnV4YaQamAKyrApKmRRMBb&u=19bzG1UFqCmB0pst3ZgbX8NuSg6Yd7aV"
+							y = "https://i.imgur.com/3IZ4o1r.jpg"
 							client.sendMessage(to, "Memproses data..")
 							client.downloadFileURL(x, saveAs="video.mp4")
 							client.downloadFileURL(y, saveAs="image.jpg")
@@ -1562,11 +1562,11 @@ def clientBot(op):
 								sendTime = unsendTime - unsend[sender]["time"]
 								sendTime = timeChange(sendTime)
 								ret_ = "╔══[ Unsend Message ]"
-								ret_ += "\n╠ Sender : @!"
-								ret_ += "\n╠ Time : {} yang lalu".format(sendTime)
+								ret_ += "\n╠ Pengirim : @!"
+								ret_ += "\n╠ Waktu : {} yang lalu".format(sendTime)
 								ret_ += "\n╠ Type : Text"
 								ret_ += "\n╠ Text : {}".format(unsend[sender]["text"])
-								ret_ += "\n╚══[ Finish ]"
+								ret_ += "\n╚══[ Nathlande ]"
 								client.sendMention(to, ret_, [contact.mid])
 								del unsend[sender]
 							except:
@@ -1576,11 +1576,11 @@ def clientBot(op):
 								sendTime = unsendTime - unsend[sender]["time"]
 								sendTime = timeChange(sendTime)
 								ret_ = "╔══[ Unsend Message ]"
-								ret_ += "\n╠ Sender : @!"
-								ret_ += "\n╠ Time : {} yang lalu".format(sendTime)
+								ret_ += "\n╠ Pengirim : @!"
+								ret_ += "\n╠ Waktu : {} yang lalu".format(sendTime)
 								ret_ += "\n╠ Type : Image"
 								ret_ += "\n╠ Text : None"
-								ret_ += "\n╚══[ Finish ]"
+								ret_ += "\n╚══[ Nathlande ]"
 								client.sendMention(to, ret_, [contact.mid])
 								client.sendImage(to, unsend[sender]["image"])
 								client.deleteFile(unsend[sender]["image"])
