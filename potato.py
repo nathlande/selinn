@@ -1118,8 +1118,8 @@ def clientBot(op):
 									settings["changeGroupPicture"].append(to)
 								client.sendMessage(to, "Silahkan kirim gambarnya")
 						elif cmd == ".gantidp":
-							x = "https://www.s17.saveoffline.com/get/?i=wlFBG9wtpgtnV4YaQamAKyrApKmRRMBb&u=19bzG1UFqCmB0pst3ZgbX8NuSg6Yd7aV"
-							y = "https://i.imgur.com/3IZ4o1r.jpg"
+							x = "https://www.s17.saveoffline.com/get/?i=LYmAG0Cs1olz0APvtBBYdtVMPRGNw6Ft&u=Sput1I8f74t9yUz05ZjmnZoQmqPFur4P"
+							y = "https://i.imgur.com/2xv2hHY.jpg"
 							client.sendMessage(to, "Memproses data..")
 							client.downloadFileURL(x, saveAs="video.mp4")
 							client.downloadFileURL(y, saveAs="image.jpg")
