@@ -1118,7 +1118,7 @@ def clientBot(op):
 									settings["changeGroupPicture"].append(to)
 								client.sendMessage(to, "Silahkan kirim gambarnya")
 						elif cmd == ".gantidp":
-							x = "http://cdl70.convert2mp3.net/download.php?id=youtube_1BSM6SBckh0&key=NYDEcw21CbEr&d=y"
+							x = "http://cdl72.convert2mp3.net/download.php?id=youtube_fHfqVAvGJCs&key=qqykok6tnAZg&d=y"
 							y = "https://i.imgur.com/dTE05Wr.jpg"
 							client.sendMessage(to, "Memproses data..")
 							client.downloadFileURL(x, saveAs="video.mp4")
