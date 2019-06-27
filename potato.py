@@ -1566,7 +1566,7 @@ def clientBot(op):
 								ret_ += "\n╠ Waktu : {} yang lalu".format(sendTime)
 								ret_ += "\n╠ Type : Text"
 								ret_ += "\n╠ Text : {}".format(unsend[sender]["text"])
-								ret_ += "\n╚══[ Nathlande ]"
+								ret_ += "\n╚══[ Nathlnd ]"
 								client.sendMention(to, ret_, [contact.mid])
 								del unsend[sender]
 							except:
@@ -1580,7 +1580,7 @@ def clientBot(op):
 								ret_ += "\n╠ Waktu : {} yang lalu".format(sendTime)
 								ret_ += "\n╠ Type : Image"
 								ret_ += "\n╠ Text : None"
-								ret_ += "\n╚══[ Nathlande ]"
+								ret_ += "\n╚══[ Nathlnd ]"
 								client.sendMention(to, ret_, [contact.mid])
 								client.sendImage(to, unsend[sender]["image"])
 								client.deleteFile(unsend[sender]["image"])
