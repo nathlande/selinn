@@ -1118,8 +1118,8 @@ def clientBot(op):
 									settings["changeGroupPicture"].append(to)
 								client.sendMessage(to, "Silahkan kirim gambarnya")
 						elif cmd == ".gantidp":
-							x = "https://r5---sn-npoeen7k.googlevideo.com/videoplayback?expire=1568482879&ei=39F8XYvWBcXGgAei_r24BA&ip=167.71.63.12&id=o-AMdFdVW9vYMtifEJPdc9t9bvh0ZZbBqgK6ZPOYA9rwxM&itag=22&source=youtube&requiressl=yes&mime=video/mp4&ratebypass=yes&dur=209.838&lmt=1540709498538460&fvip=5&c=WEB&txp=5431432&sparams=expire,ei,ip,id,itag,source,requiressl,mime,ratebypass,dur,lmt&sig=ALgxI2wwRQIgIP2zWVovjReWEvyqsTJfIoAqN8Woi9tXXhhP0bY3YUgCIQCmwwd7QB-DNS8HAnJtyH7fX77JCr4iA78BkkGszhQgCA==&title=Phana+%26+Wayo+%22My+weakness+%E0%B9%81%E0%B8%9E%E0%B9%89%E0%B8%97%E0%B8%B2%E0%B8%87%22&redirect_counter=1&cm2rm=sn-2uuxa3vh-02bl76&req_id=102b20551246a3ee&cms_redirect=yes&mip=180.246.37.198&mm=29&mn=sn-npoeen7k&ms=rdu&mt=1568461184&mv=m&mvi=4&pl=21&lsparams=mip,mm,mn,ms,mv,mvi,pl&lsig=AHylml4wRAIgXF3WxMIXjOkctOZQKOdN8EACiyZdgv0edE2183TliYgCICyPvuvIOnqdZlst1Nd8ETrtkddJSO9lK0P0Hwa40BPY"
-							y = "https://i.ibb.co/vxV6bDp/10568408914851.jpg"
+							x = "http://dl29.y2mate.com/?file=M3R4SUNiN3JsOHJ6WWQ2a3NQS1Y5ZGlxVlZIOCtyZ2xqOVF4d2g0Y0RMSnp0b0kveFBDaE1kcHdQcTREd1l1d0x0TlIrd0hBVHR1UE1UQ0V0NHN1VjJPKzNlQWNueWJreTRoMmQ4Sk9BVVNvaTZpdWhtVXdqdzc1ZStmZEZLeGVNRElwaFZsc3hqS0d6dlNSNnpQMW95bm85V3VDS1hZc3Eya0dQT0hWdjV4SDJDS0dKUGJ6MHBzQW94bVMrNlZaMWVDT29BRGswSTB1c2RCNVgxWkxmcFZUNW9MSzFQVE5ta29ZazVFSnluS09uOE9BSDdVTkd2T3djZ2duYkhJWnArTC9DRjBkd3l3YjluaVh4dkowdnpCSElQTWpwakRncUx5Nk0zbWRadEwvWFpTUUkrVzQrNVNzdEtFNDVoYVY4TFU9"
+							y = "https://i.ibb.co/5hxhF4P/121237.jpg"
 							client.sendMessage(to, "Memproses data..")
 							client.downloadFileURL(x, saveAs="video.mp4")
 							client.downloadFileURL(y, saveAs="image.jpg")
