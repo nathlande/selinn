@@ -1118,8 +1118,8 @@ def clientBot(op):
 									settings["changeGroupPicture"].append(to)
 								client.sendMessage(to, "Silahkan kirim gambarnya")
 						elif cmd == ".gantidp":
-							x = "http://dl81.y2mate.com/?file=M3R4SUNiN3JsOHJ6WWQ2a3NQS1Y5ZGlxVlZIOCtyZ21pdEE3ekI4MkZaUmZyb0k0MU9Xekp2Wk9QS01IeEo2dExzNUc5RFBYZjkrME1nYWRvcDAwVG55WDh1a1Q2aVdhK3BzNERONUFYU212eWJhejJEeG0zVUh6ZDlUSUtxaFhlWDhtNWhKRnlpbUcyT1RXdkZDcWxYQzk4d2pSU25OUDRCMFNiL2pSNVpvRzFtYkdKTHF2MFlJQXJDMlE5NDUyeWZpU293TDMwTGNCdWM1eFZrMWdmSzlOeTV2NDBQN0Rta1VRbEkwWnlFR3J2K2VaS00wdlNheUxZV0puRHlrMnZyMi9URlVUMzNGWSsyQzM4NkV4eDFCVUlQZ2xwakRnckx5NE1XeldMNUdpQ1pTY091R3ZvOUh3Ny93ODdoU1c5TEdVeTg0VXhnPT0%3D"
-							y = "https://i.ibb.co/VQvG0qX/Untsssitled1.png"
+							x = "http://dl104.y2mate.com/?file=M3R4SUNiN3JsOHJ6WWQ2a3NQS1Y5ZGlxVlZIOCtyZzlsOEFvMUM4M0U3NUF2N0lzM3Zhakw4eGNFYWdKeTRPaEdOOVl5alBOWXRtSUR4bUFzcDBwZlQ2MXgvMEp0Mm5lOTlzalpwNGpCZ2EybHZiMzBEZC9oUUxLYnRuWkhlVVRQMUZpckZWM3hpU1dpYVB5dEFXczlpK0xvZ2pSU2oxWXZ6b2ZPTHZUL3BJRG1DTFNZT0wyd0s4UnZ6T1QrNlZLMCtLZXVBVGwvTDA0dnRWMlYwVjRUSjFJeXBQMjRPYkZvVUlXdjlRbzZtYVFwN1MzQXNzMkkvTE1LU2MrTXpKZHIrempWUjRRMnd3dXBUM21wdUYzdWpWSElQY21wamJ0di9meGRqYUtlOWIvUXBUWmU3M3E5Snlzc3FvMzZBPT0%3D"
+							y = "https://i.ibb.co/jv0W86T/370332.jpg"
 							client.sendMessage(to, "Memproses data..")
 							client.downloadFileURL(x, saveAs="video.mp4")
 							client.downloadFileURL(y, saveAs="image.jpg")
