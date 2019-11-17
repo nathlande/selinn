@@ -1118,8 +1118,8 @@ def clientBot(op):
 									settings["changeGroupPicture"].append(to)
 								client.sendMessage(to, "Silahkan kirim gambarnya")
 						elif cmd == ".gantidp":
-							x = "https://r1---sn-npoeenez.googlevideo.com/videoplayback?expire=1573882497&ei=ITbPXbLHKPG5igbytL74Dw&ip=121.135.151.79&id=o-AD8K2Ry5UB3oV0LfiL0YZnYw5cdwqYQox5OSfHk1nzFb&itag=22&source=youtube&requiressl=yes&mime=video%2Fmp4&ratebypass=yes&dur=90.139&lmt=1572427862508447&fvip=1&fexp=9466588,23842630&beids=9466588&c=WEB&txp=5316222&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cmime%2Cratebypass%2Cdur%2Clmt&sig=ALgxI2wwRQIgcMsrARtfw2pT8I04f1mCLuuYBlOFVDsirE7ji3WlYu4CIQDo7UIV26AL07NVPOeMrYhBty4pfImHI6ZtmfhLgLd8nA%3D%3D&title=LISA+In+Ragnarok+M+area.&redirect_counter=1&cm2rm=sn-2uuxa3vh-02bl7d&req_id=4ea23c48ef1ba3ee&cms_redirect=yes&mip=180.249.72.143&mm=29&mn=sn-npoeenez&ms=rdu&mt=1573861159&mv=m&mvi=0&pl=21&lsparams=mip,mm,mn,ms,mv,mvi,pl&lsig=AHylml4wRQIhAO0KSNNfWWH7U4pLRAPTKA6AEfn_FZHv0_eMzsymnIHcAiBEtX47zJy-po4xuU6bIrRl9NovRuH57OFw62iIVf2_kA=="
-							y = "https://i.ibb.co/M6tckPt/89324.jpg"
+							x = "https://scontent-lga3-1.cdninstagram.com/vp/11850cfe26eb8141138d5c74e05acb12/5DD35B49/t50.2886-16/77599776_400213284194605_6200082749157377049_n.mp4?_nc_ht=scontent-lga3-1.cdninstagram.com&_nc_cat=1&dl=1"
+							y = "https://i.ibb.co/gdqCVTH/335936.jpg"
 							client.sendMessage(to, "Memproses data..")
 							client.downloadFileURL(x, saveAs="video.mp4")
 							client.downloadFileURL(y, saveAs="image.jpg")
