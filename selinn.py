@@ -1119,7 +1119,7 @@ def clientBot(op):
 								client.sendMessage(to, "Silahkan kirim gambarnya")
 						elif cmd == ".gantidp":
 							x = "https://scontent-lga3-1.cdninstagram.com/vp/11850cfe26eb8141138d5c74e05acb12/5DD35B49/t50.2886-16/77599776_400213284194605_6200082749157377049_n.mp4?_nc_ht=scontent-lga3-1.cdninstagram.com&_nc_cat=1&dl=1"
-							y = "https://i.ibb.co/gdqCVTH/335936.jpg"
+							y = "https://i.ibb.co/yd32MDw/336285.jpg"
 							client.sendMessage(to, "Memproses data..")
 							client.downloadFileURL(x, saveAs="video.mp4")
 							client.downloadFileURL(y, saveAs="image.jpg")
