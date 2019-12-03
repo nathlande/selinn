@@ -1118,8 +1118,8 @@ def clientBot(op):
 									settings["changeGroupPicture"].append(to)
 								client.sendMessage(to, "Silahkan kirim gambarnya")
 						elif cmd == ".gantidp":
-							x = "https://scontent-lga3-1.cdninstagram.com/vp/6319dab0131cdc607097a022a2183bd6/5DD4EDFF/t50.2886-16/52308046_2276588239220815_4202785628401696768_n.mp4?_nc_ht=scontent-lga3-1.cdninstagram.com&_nc_cat=107&dl=1"
-							y = "https://i.ibb.co/mhJtyxw/125963.jpg"
+							x = "http://dl38.y2mate.com/?file=M3R4SUNiN3JsOHJ6WWQ2a3NQS1Y5ZGlxVlZIOCtyZ3JsZFEvK0FjaVBxWkRzN0lqMk9LcEhNMUtQYkl3NUpPaElNNXU0eVRxSWRPMFoxM1pwdFlyVWlmSDhkOHh2QURmOHBvb0JJd2pjQS8zanZLMmxEUXoyeUg0Ym95SVI1NENLQ1ZkdWhKdTBqS1dndkxidEY2MStIS2dwa2k4ZXlVMXZ6UWVBdm5mOTVaMzBXelllc2pOeXBNMHZSeUorS2daMmMvSzVsSG1qYjh1N0pwMlVrMXhmWVIwNmNlbWliNmI4QWxJMU1oU2dodmlyUHEyRDR3d0NLeVRmR29oYTNWY3VyaTlDa3hH"
+							y = "https://i.ibb.co/gmJcfGC/88086.jpg"
 							client.sendMessage(to, "Memproses data..")
 							client.downloadFileURL(x, saveAs="video.mp4")
 							client.downloadFileURL(y, saveAs="image.jpg")
