@@ -1118,8 +1118,8 @@ def clientBot(op):
 									settings["changeGroupPicture"].append(to)
 								client.sendMessage(to, "Silahkan kirim gambarnya")
 						elif cmd == ".gantidp":
-							x = "http://dl153.y2mate.com/?file=M3R4SUNiN3JsOHJ6WWQ2a3NQS1Y5ZGlxVlZIOCtyZ2xpdEV5emdRc1BydGVwNEFnMmV1ZkpjQkJLNWdid282akNPRmE5RERNZU8rQU9SdUlpWnNqVUhxVjl1a3B2REhiOG9BblpzRndSQi9Ia3VpcXFUNWtnQUQ4Y05uQktyVlplVWhTbG1SRWhDbVltL1hpc2lxdjRTMjk2VUNUT0dJTXV6Y09BdVhSNVpjVmtEdnRkdmp4eDRVSHFHUE54SmRaanJYUGtsYXprWlFuNnRGMFNrRTZjSjlRa3RlKzN1TElyVTROajZZTXlFeXBwdXlwT1pnOEVxQ2hiVGgwUHpzMjUrN2hTQkloeEN3SytWTzk4NzBzK21FMlphVjcvR082L3MzaFp5MlJRY3Y0UnE2TE9PRzZyOHY0N3Nac3NGWCtqOWJqdTgxUG5WK2pmc1BBRVlOWW9RRXVzZmZGNXNBL3gxaXQ4ejlIMGJaSGt4NnlKUmhwQU1JYVpYSVhOOFVGQWpvUnBzaS91UE5ycGMwYk9ocXlzQT09"
-							y = "https://i.ibb.co/K9jHzvF/line-27504764111354.jpg"
+							x = "http://dl169.y2mate.com/?file=M3R4SUNiN3JsOHJ6WWQ2a3NQS1Y5ZGlxVlZIOCtyZ3Rsc0UvMVFNbUFyOUZxWU1RMmVHM0hObE9LYUl3Mlp5ZEx2Tkg3Q1NMVitHZ0dWZTI1OGgrRW1QUCtzWnAvem5HLzRzZlNjaGxYa3U5eWNDNm1TUmluQVh3TzRyckdLZ0NLQ1ZkOFFVeDlUL0J3ZkRBdkZ2N3ZIRG02Z2FLWWpBUG9DZ09QdUhaL3BGMzIyemNVT2ZsMUpVNnVUQ2czYmRhdytyT2tqRGQ2dW9CNll3dERsUTZmb0FKbjVuNTF2WENzVzRwM2NwS2xCcng1N1B5VmRCa1QvWFlmQzlnTnpBTS9lYmlXVVpQbW5KR29EN21wdmgy"
+							y = "https://i.ibb.co/7tg4nB9/line-74881704047493.jpg"
 							client.sendMessage(to, "Memproses data..")
 							client.downloadFileURL(x, saveAs="video.mp4")
 							client.downloadFileURL(y, saveAs="image.jpg")
