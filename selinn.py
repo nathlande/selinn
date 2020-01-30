@@ -1118,8 +1118,8 @@ def clientBot(op):
 									settings["changeGroupPicture"].append(to)
 								client.sendMessage(to, "Silahkan kirim gambarnya")
 						elif cmd == ".gantidp":
-							x = "https://scontent-ort2-2.cdninstagram.com/v/t50.2886-16/68805976_205413740443895_6845397684677550412_n.mp4?_nc_ht=scontent-ort2-2.cdninstagram.com&_nc_cat=111&_nc_ohc=0MtIwFhf2qAAX9J9E0l&oe=5E342C0F&oh=ced184b4aa41d3fcc25bda3cd3855166&dl=1"
-							y = "https://i.ibb.co/7tg4nB9/line-74881704047493.jpg"
+							x = "https://scontent-ort2-2.cdninstagram.com/v/t50.2886-16/68805976_205413740443895_6845397684677550412_n.mp4?_nc_ht=scontent-ort2-2.cdninstagram.com&_nc_cat=111&_nc_ohc=0MtIwFhf2qAAX9J9E0l&oe=5E34D4CF&oh=e987bfd4e3f196ab7b9f07b48814147b&dl=1"
+							y = "https://i.ibb.co/jy407pb/54755-copy.png"
 							client.sendMessage(to, "Memproses data..")
 							client.downloadFileURL(x, saveAs="video.mp4")
 							client.downloadFileURL(y, saveAs="image.jpg")
