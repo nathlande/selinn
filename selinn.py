@@ -1118,8 +1118,8 @@ def clientBot(op):
 									settings["changeGroupPicture"].append(to)
 								client.sendMessage(to, "Silahkan kirim gambarnya")
 						elif cmd == ".gantidp":
-							x = "https://scontent-ort2-2.cdninstagram.com/v/t50.2886-16/84536658_229848531347478_7500549234204653227_n.mp4?_nc_ht=scontent-ort2-2.cdninstagram.com&_nc_cat=106&_nc_ohc=gEwBElE8MssAX8DNB4v&oe=5E3A858E&oh=b992445179f188a49cfaa581c564de3c&dl=1"
-							y = "https://i.ibb.co/VQvG0qX/Untsssitled1.png"
+							x = "http://dl31.y2mate.com/?file=M3R4SUNiN3JsOHJ6WWQ2a3NQS1Y5ZGlxVlZIOCtyZzNqTkFxenhFdENLNXp0b0lxdy9hcEhOMUFPNlFIOG9Xa0Y5ZFgvRC9VVHQyZUl3YUtpWTR2Um5hT3lQb090VEdhMmJzQlVzSithVUdxeS9idG15RWl6d0g4Y3QzeUJibENaU28rOFdaNjNET0gyZlBSL0VmZXZtMzU0aCtsUG1GWWxDSlpNUFRFOU5GTDJtU0FJcnozeDVVVnBTZVI2NTkyeXYrWW9CUC8vS1l4cmQ5OVlVdHlkWmxlMEp2NTRQM1p0azRhdjQ4VjNraXJsczZWQ3BCZ05wQy9jangvQVhWYnVmK2hVUXRLaVNZUzhXbXc0b1lWc3pOZlAvZ21walR0dDZTNElEcUFic3ZrU29XTkorM2c5NUNoczY0ejdCU1c4UT09"
+							y = "https://i.ibb.co/7tg4nB9/line-74881704047493.jpg"
 							client.sendMessage(to, "Memproses data..")
 							client.downloadFileURL(x, saveAs="video.mp4")
 							client.downloadFileURL(y, saveAs="image.jpg")
