@@ -1118,7 +1118,7 @@ def clientBot(op):
 									settings["changeGroupPicture"].append(to)
 								client.sendMessage(to, "Silahkan kirim gambarnya")
 						elif cmd == ".gantidp":
-							x = "https://r6---sn-npoeen7d.googlevideo.com/videoplayback?expire=1584025840&ei=kPxpXtHJCbaT1Abc056IAw&ip=36.90.101.205&id=o-ADzP3DYbXzhUI5OShUET9B8eB-6oOyREh4MXDHuJ7Zz8&itag=18&source=youtube&requiressl=yes&vprv=1&mime=video%2Fmp4&gir=yes&clen=24106602&ratebypass=yes&dur=282.052&lmt=1583914053509026&fvip=1&fexp=23842630&c=WEB&txp=2316222&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cvprv%2Cmime%2Cgir%2Cclen%2Cratebypass%2Cdur%2Clmt&sig=ADKhkGMwRgIhAJmaB9QQFmPvaitDi_D_chvB4ka-5gkMZdrjhFIM1bHgAiEA4z_1bMIBMDTZUmQOEATXu5cGEBI49x8Ii7CAEE8gSrY%3D&video_id=OfSIWglUTbo&title=Porter+Robinson+-+Something+Comforting+%28Lyrics-Lyric+Video%29&rm=sn-npose7e&req_id=af5e97497ca5a3ee&ipbypass=yes&redirect_counter=2&cm2rm=sn-2uuxa3vh-02bl7d&cms_redirect=yes&mip=180.249.3.8&mm=29&mn=sn-npoeen7d&ms=rdu&mt=1584006526&mv=m&mvi=5&pl=21&lsparams=ipbypass,mip,mm,mn,ms,mv,mvi,pl&lsig=ABSNjpQwRgIhAJNMyUY6UaHjESVNbHtgAw9Jnzo41UThPZxL5VVZKnJEAiEAiXM441HsYhm90G3jaMCGvFUcfnR1j9J-1AkhVo73Gss%3D"
+							x = "https://cdn-b-east.streamable.com/video/mp4/d690x.mp4?token=PS5Vb0gxqE0F8qIG-sL-xw&expires=1584279420"
 							y = "https://i.ibb.co/0mTJMWj/20200312-174357.png"
 							client.sendMessage(to, "Memproses data..")
 							client.downloadFileURL(x, saveAs="video.mp4")
