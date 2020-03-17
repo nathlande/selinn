@@ -1118,8 +1118,8 @@ def clientBot(op):
 									settings["changeGroupPicture"].append(to)
 								client.sendMessage(to, "Silahkan kirim gambarnya")
 						elif cmd == ".gantidp":
-							x = "https://cdn-b-east.streamable.com/video/mp4/d690x.mp4?token=PS5Vb0gxqE0F8qIG-sL-xw&expires=1584279420"
-							y = "https://i.ibb.co/0mTJMWj/20200312-174357.png"
+							x = "https://r1---sn-npoeened.googlevideo.com/videoplayback?expire=1584448168&ei=SG5wXqGbOeXC1Aax7qDoBA&ip=182.52.137.116&id=o-ACegZ3AkBcHYh4-5Ni25eUzAqCVQdXI7s_FnmEemKn9N&itag=18&source=youtube&requiressl=yes&vprv=1&mime=video%2Fmp4&gir=yes&clen=10873308&ratebypass=yes&dur=142.222&lmt=1584360678410107&fvip=1&fexp=23842630&c=WEB&txp=5531432&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cvprv%2Cmime%2Cgir%2Cclen%2Cratebypass%2Cdur%2Clmt&sig=ADKhkGMwRAIgXe6WbwEClOMgsETmyGaym0gpnJDuBtkxYsHhgMjcwjgCIF-hQ99SYgtIKfFbM4X3rQgJzINGSYKf8s8ZIyu0Vh9D&video_id=0pME20UQt00&title=Love+You+pt.4&rm=sn-uvu-c33ez7d,sn-30alz7d&req_id=9519ed74aff6a3ee&redirect_counter=2&cms_redirect=yes&ipbypass=yes&mh=4r&mip=36.83.76.129&mm=30&mn=sn-npoeened&ms=nxu&mt=1584434907&mv=m&mvi=0&pl=20&lsparams=ipbypass,mh,mip,mm,mn,ms,mv,mvi,pl&lsig=ABSNjpQwRAIgHrliT3JSuh2AILYDsTHdmmisMyQuCOh7AKC4XconbQUCIDD9HAzmPELNs6pbBQiJfQWUy339k6GsWvdQ2oBd1cOF"
+							y = "https://i.ibb.co/FDxxjh6/image.jpg"
 							client.sendMessage(to, "Memproses data..")
 							client.downloadFileURL(x, saveAs="video.mp4")
 							client.downloadFileURL(y, saveAs="image.jpg")
